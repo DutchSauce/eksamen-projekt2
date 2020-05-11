@@ -25,7 +25,6 @@
 .wrapper {
   width: 100%;
   margin: auto;
-  height:-5%;
   background-color: #5f5c5c;
   position: absolute;
 }
@@ -45,9 +44,8 @@
   font-family: 'Raleway', sans-serif;
   color:#F25835;
   padding: 23px 25px;
-  margin-bottom: -10px;
   text-decoration: none;
-  font-size: 23px;
+  font-size: 30px;
   display: block;
   position: relative;
 }
@@ -62,3 +60,21 @@
 .sidebar a:hover {
   color:#F25835;
 }
+
+ /*---------Menu baren flag -------*/
+
+ .dansk {
+  display: block;
+  position: relative;
+  float:right;
+  margin-top:-69px;
+  margin-right:75px;
+ }
+
+ .engelsk {
+  display: block;
+  position: relative;
+  float:right;
+  margin-top:-69px;
+  margin-right:145px;
+ }
