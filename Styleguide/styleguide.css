@@ -1,0 +1,94 @@
+
+
+a {
+    font-size: 14px;
+    line-height: 10px;
+}
+
+header {
+    font-size: 40px;
+}
+.overskrifter {
+    font-size:25px;
+}
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+.source {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.hvid {
+    background-color:#ebfff3;
+    padding:30px;
+    border-radius: 15px;
+}
+
+.grøn {
+    background-color:#72a895;
+    padding:30px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.lysorange{
+    background-color:#ff7152;
+    padding:30px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.orange{
+    background-color:#f25835f3;
+    padding:30px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.sort{
+    background-color:#313c40;
+    padding:30px;
+    border-radius: 15px;
+    margin-left: 20px;
+}
+
+.form {
+    width: 150px;
+}
+
+.orangeknap {
+    background-color:#f25835f3;
+    color: #ebfff3; 
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+.orangeknap:hover {
+    background-color:white;
+    color: #f25835f3; 
+    border-style: solid;
+    border-color: #f25835f3;
+}
+
+.sortknap {
+    background-color:#313c40;
+    color: #f25835f3;
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    margin-top:160px; 
+    margin-bottom: 30px;
+}
+.sortknap:hover {
+    background-color:white;
+    color:#313c40; 
+    border-style: solid;
+    border-color: #313c40;
+}
