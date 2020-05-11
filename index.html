@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="robotnordic.css">
     <script src="index.js" defer></script>
     <title>Robot Nordic</title>
@@ -11,21 +13,23 @@
   <body>
     <div id="canvas_container">
       <canvas id="my_canvas" height="812"></canvas>
-      </div>
-    
-      <div class="wrapper">
-        <div class="sidebar">
-          <a href="index.html">
-          <img class="logo" src="img/logo-01.png" alt="Robot Nordics Logo"></a>
-    
-            <ul>
-                <li><a href="index.html"><i class="forside"></i>Forside</a></li>
-                <li><a href=""><i class="webshop"></i>Webshop</a></li>
-                <li><a href=""><i class="hvem"></i>Om Mona Vander</a></li>
-                <li><a href=""><i class="kontakt"></i>Kontakt</a></li>
-            </ul>
-        </div>
     </div>
+    
+    <!-- Simulate a smartphone / tablet -->
+<div class="wrapper">
+
+  <!-- Top Navigation Menu -->
+  <div class="sidebar">
+    <a href="#home" class="active">Logo</a>
+    <div id="myLinks">
+      <a href="#news">News</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
 
   </body>
 </html>

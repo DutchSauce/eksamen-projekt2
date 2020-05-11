@@ -3,6 +3,7 @@
   padding: 0;
 }
 
+/* --------- Bagrunds javascript -----------*/
 #canvas_container{
   width: 100%;
   height:812px;
@@ -20,16 +21,47 @@
 
 /* font til tal: font-family: 'Source Sans Pro', sans-serif; */
 
+/* --------- menu baren -----------*/
+.wrapper {
+  max-width: 100%;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
 
-.wrapper{
-  display: flex;
+.sidebar {
+  overflow: hidden;
+  background-color: #333;
   position: relative;
- }
- 
- .wrapper .sidebar{
-  background: white;
-  position: fixed;
-  width: 100%;
-  height:20%;
- }
- 
+}
+
+.sidebar #myLinks {
+  display: none;
+}
+
+.sidebar a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.sidebar a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.sidebar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.logo {
+  width:120px;
+}
