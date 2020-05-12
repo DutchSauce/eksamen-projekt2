@@ -133,6 +133,6 @@
   transition: 0.25s; 
 }
 
-.box input[type = "submit"]:hover{
-  background: #72a895;
+.box input[type = "submit"]:hover {
+  background-color: #72a895;
 }
