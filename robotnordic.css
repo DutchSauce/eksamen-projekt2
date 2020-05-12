@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-/* --------- Bagrunds javascript -----------*/
+/* --------- Baggrunds javascript -----------*/
 #canvas_container{
   width: 100%;
   height:812px;
@@ -62,8 +62,7 @@
 }
 
  /*---------Menu baren flag -------*/
-
- .dansk {
+.dansk {
   display: block;
   position: relative;
   float:right;
@@ -71,7 +70,7 @@
   margin-right:75px;
  }
 
- .engelsk {
+.engelsk {
   display: block;
   position: relative;
   float:right;
