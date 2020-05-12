@@ -1,5 +1,4 @@
 /*--------- Kørende baggrund ----------*/
-
 var bg = new Image();
 bg.src = "img/baggrund.png";
 function initCanvas(){
@@ -32,7 +31,6 @@ window.addEventListener('load', function(event) {
 });
 
 /* ------ menu baren burger menu -------*/
-
 function myFunction() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
