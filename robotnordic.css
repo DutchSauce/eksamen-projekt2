@@ -85,6 +85,7 @@
   left: 15%;
   background: #313c40;
   text-align: center;
+  border-radius: 10px;
 }
 
 .box h1 {
@@ -110,6 +111,16 @@
   transition: 0.25s;
 }
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+}
+
+
     /* boksen udvider sig når musen fokuserer på en af boksene */
 .box input[type = "text"]:focus, .box input[type = "password"]:focus{
   width: 80%;
@@ -133,11 +144,20 @@
   color: white;
   border-radius: 18px;
   transition: 0.25s;
+  display: block;
 }
 
 .box button:hover {
   background-color: #72a895;
 }
+
+.log-ind-icon{
+  width: 8%;
+  position: absolute;
+  left: 85px;
+  top: 239px;
+}
+
 
 .scan{
   font-family: 'Raleway', sans-serif;
@@ -156,7 +176,7 @@
   border-radius: 18px;
   transition: 0.25s;
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 21%;
 }
 
@@ -164,6 +184,14 @@
   background-color: #313C40;
   color: #FF7152;
 }
+
+.qr-icon{
+  width: 15%;
+  position: absolute;
+  left: 12px;
+  top: 10px;
+}
+
 
 /*---------- forside.html ---------*/
 
@@ -207,7 +235,7 @@
   font-size: 29px;
   background-color:#313c40;
   opacity:0.8;
-  padding: 18px 18px; 
+  padding: 18px 18px;
   color: white;
   margin-top: 15%;
 }
@@ -218,8 +246,8 @@
   letter-spacing: 2px;
   background-color:#313c40;
   opacity: 0.8;
-  padding: 18px 18px; 
-  color: white; 
+  padding: 18px 18px;
+  color: white;
   font-size: 18px;
   line-height: 25px;
 }
