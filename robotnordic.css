@@ -1,4 +1,4 @@
-/* font til tekst: font-family: 'Raleway', sans-serif; */
+  /* font til tekst: font-family: 'Raleway', sans-serif; */
 /* font til tal: font-family: 'Source Sans Pro', sans-serif; */
 *{
   margin: 0;
@@ -81,16 +81,16 @@
   width: 50%;
   padding: 40px;
   position: absolute;
-  top: 150%;
+  top: 20%;
   left: 15%;
-  background: #313c40; 
-  text-align: center; 
+  background: #313c40;
+  text-align: center;
 }
 
 .box h1 {
   font-family: 'Raleway', sans-serif;
   color: white;
-  text-transform: uppercase; 
+  text-transform: uppercase;
 }
 
     /* design for brugernavn og kodeord bokse */
@@ -98,43 +98,69 @@
   font-family: 'Raleway', sans-serif;
   border:0;
   background:none;
-  display:block; 
-  margin: 20px auto; 
-  text-align: center; 
+  display:block;
+  margin: 20px auto;
+  text-align: center;
   border: 2px solid #F25835;
-  padding: 14px 10px; 
-  width: 50%; 
-  outline: none; 
-  color:white; 
-  border-radius: 18px; 
-  transition: 0.25s; 
+  padding: 14px 10px;
+  width: 50%;
+  outline: none;
+  color:white;
+  border-radius: 18px;
+  transition: 0.25s;
 }
 
     /* boksen udvider sig når musen fokuserer på en af boksene */
 .box input[type = "text"]:focus, .box input[type = "password"]:focus{
-  width: 80%; 
+  width: 80%;
   border-color: #72a895;
   display:flex;
   justify-items: center;
 
-} 
+}
     /* design på login*/
 .box input[type = "submit"]{
   font-family: 'Raleway', sans-serif;
   border:0;
   background:none;
-  display:block; 
-  margin: 20px auto; 
-  text-align: center; 
+  display:block;
+  margin: 20px auto;
+  text-align: center;
   border: 2px solid #72a895;
-  padding: 14px 40px; 
-  width: 60%; 
-  outline: none; 
-  color: white; 
-  border-radius: 18px; 
-  transition: 0.25s; 
+  padding: 14px 40px;
+  width: 60%;
+  outline: none;
+  color: white;
+  border-radius: 18px;
+  transition: 0.25s;
 }
 
 .box input[type = "submit"]:hover {
   background-color: #72a895;
+}
+
+.scan{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  border:0;
+  background:none;
+  display:block;
+  margin: 20px auto;
+  text-align: center;
+  background-color: #F25835;
+  padding: 14px 40px;
+  width: 60%;
+  outline: none;
+  color: black;
+  border-radius: 18px;
+  transition: 0.25s;
+  position: absolute;
+  top: 70%;
+  left: 21%;
+}
+
+.scan:hover {
+  background-color: #313C40;
+  color: #FF7152;
 }
