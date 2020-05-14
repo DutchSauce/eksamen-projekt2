@@ -64,16 +64,16 @@
   display: block;
   position: relative;
   float:right;
-  margin-top:-62px;
-  margin-right:100px;
+  margin-top: -69px;
+  margin-right:70px;
  }
 
 .engelsk {
   display: block;
   position: relative;
   float:right;
-  margin-top:-62px;
-  margin-right:145px;
+  margin-top: -69px;
+  margin-right:110px;
 }
 
  /*---------- Login ---------*/
@@ -176,7 +176,7 @@
   border-radius: 18px;
   transition: 0.25s;
   position: absolute;
-  top: 75%;
+  top: 65%;
   left: 21%;
 }
 
