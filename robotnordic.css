@@ -306,13 +306,6 @@
   padding:20px;
 }
 
-.select-items div,.select-selected:after {
-
-}
-
-
-
-
 /* Design for dropdown boksen*/
 .select-items {
   position: absolute;
@@ -328,8 +321,4 @@
 /*hide the items when the select box is closed:*/
 .select-hide {
   display: none;
-}
-
-.select-items div:hover, .same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
 }
