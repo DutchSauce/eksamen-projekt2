@@ -66,6 +66,7 @@
   float:right;
   margin-top: -69px;
   margin-right:70px;
+  border-radius: 3px;
  }
 
 .engelsk {
@@ -74,6 +75,7 @@
   float:right;
   margin-top: -69px;
   margin-right:110px;
+  border-radius: 3px;
 }
 
  /*---------- Login ---------*/
@@ -124,7 +126,7 @@
     /* boksen udvider sig når musen fokuserer på en af boksene */
 .box input[type = "text"]:focus, .box input[type = "password"]:focus{
   width: 80%;
-  border-color: #72a895;
+  border-color: #5eb5eb;
   display:flex;
   justify-items: center;
 
@@ -155,9 +157,16 @@
   width: 8%;
   position: absolute;
   left: 85px;
-  top: 239px;
+  top: 247px;
 }
 
+.box a{
+  text-decoration: none;
+}
+
+button{
+  border-color: transparent;
+}
 
 .scan{
   font-family: 'Raleway', sans-serif;
@@ -238,6 +247,9 @@
   padding: 18px 18px;
   color: white;
   margin-top: 15%;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 18px 18px 0px 0px;
 }
 
 .budskabstekst {
@@ -250,6 +262,9 @@
   color: white;
   font-size: 18px;
   line-height: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 0px 0px 18px 18px;
 }
 
 
