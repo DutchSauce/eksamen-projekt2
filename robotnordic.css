@@ -155,9 +155,16 @@
   width: 8%;
   position: absolute;
   left: 85px;
-  top: 239px;
+  top: 247px;
 }
 
+.box a{
+  text-decoration: none;
+}
+
+button{
+  border-color: transparent;
+}
 
 .scan{
   font-family: 'Raleway', sans-serif;
