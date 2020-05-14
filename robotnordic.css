@@ -137,7 +137,7 @@
   display:block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid #72a895;
+  border: 2px solid #5eb5eb;
   padding: 14px;
   width: 60%;
   outline: none;
@@ -148,7 +148,7 @@
 }
 
 .box button:hover {
-  background-color: #72a895;
+  background-color: #5eb5eb;
 }
 
 .log-ind-icon{
@@ -257,39 +257,44 @@
 
 /*-------- dropdown bokse -------*/
 
-/*the container must be positioned relative:*/
 .custom-select {
-  position: relative;
-  font-family: Arial;
+  position: absolute;
+  font-family:'Raleway', sans-serif;
+  margin-top:50%;
+  margin-left: 23%;
+  font-size: 18px;
+  letter-spacing: 4px;
 }
 
+/* gemmer select sectionen, så det kommer frem når man dropper down*/
 .custom-select select {
-  display: none; /*hide original SELECT element:*/
+  display: none;
 }
 
 .select-selected {
-  background-color: DodgerBlue;
+  background-color:#313c40;
+  border-radius: 18px;
 }
 
-/*style the arrow inside the select element:*/
+/* design af pil ned */
 .select-selected:after {
   position: absolute;
   content: "";
-  top: 14px;
-  right: 10px;
-  width: 0;
-  height: 0;
+  top: 25px;
+  right: 20px;
+  width: 2px;
+  height: 10px;
   border: 6px solid transparent;
   border-color: #fff transparent transparent transparent;
 }
 
-/*point the arrow upwards when the select box is open (active):*/
+/*gør at pilen vender op ad når select sectionen er nede*/
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #fff transparent;
   top: 7px;
 }
 
-/*style the items (options), including the selected item:*/
+/*design teksten i select*/
 .select-items div,.select-selected {
   color: #ffffff;
   padding: 8px 16px;
@@ -297,16 +302,27 @@
   border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
   cursor: pointer;
   user-select: none;
+  font-family: 'Raleway', sans-serif;
+  padding:20px;
 }
 
-/*style items (options):*/
+.select-items div,.select-selected:after {
+
+}
+
+
+
+
+/* Design for dropdown boksen*/
 .select-items {
   position: absolute;
-  background-color: DodgerBlue;
+  background-color:#313c40;
+  opacity: 0.8;
   top: 100%;
   left: 0;
   right: 0;
   z-index: 99;
+  border-radius: 0px 0px 18px 18px;
 }
 
 /*hide the items when the select box is closed:*/
