@@ -1,341 +1,336 @@
   /* font til tekst: font-family: 'Raleway', sans-serif; */
-/* font til tal: font-family: 'Source Sans Pro', sans-serif; */
-*{
-  margin: 0;
-  padding: 0;
-}
+  /* font til tal: font-family: 'Source Sans Pro', sans-serif; */
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-/* --------- Baggrunds javascript -----------*/
-#canvas_container{
-  width: 100%;
-  height:812px;
-  margin:0;
-  position: absolute;
-}
-#my_canvas{
- display: block;
- float: left;
- width: 100%;
-}
+  /* --------- Baggrunds javascript -----------*/
+  #canvas_container {
+    width: 100%;
+    height: 812px;
+    margin: 0;
+    position: absolute;
+  }
 
+  #my_canvas {
+    display: block;
+    float: left;
+    width: 100%;
+  }
 
-/* --------- menu baren -----------*/
-.wrapper {
-  width: 100%;
-  margin: auto;
-  background-color: #5f5c5c;
-  position: absolute;
-}
+  /* --------- menu baren -----------*/
+  .wrapper {
+    width: 100%;
+    margin: auto;
+    background-color: #5f5c5c;
+    position: absolute;
+  }
 
-.sidebar {
-  overflow: hidden;
-  background-color: #5f5c5c;
-  position: relative;
-  height: 2%;
-}
+  .sidebar {
+    overflow: hidden;
+    background-color: #5f5c5c;
+    position: relative;
+    height: 2%;
+  }
 
-.sidebar #myLinks {
-  display: none;
-}
+  .sidebar #myLinks {
+    display: none;
+  }
 
-.sidebar a {
-  font-family: 'Raleway', sans-serif;
-  color:#F25835;
-  padding: 23px 25px;
-  text-decoration: none;
-  font-size: 30px;
-  display: block;
-  position: relative;
-}
+  .sidebar a {
+    font-family: 'Raleway', sans-serif;
+    color: #F25835;
+    padding: 23px 25px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    position: relative;
+  }
 
-.sidebar a.icon {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+  .sidebar a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
 
-.sidebar a:hover {
-  color:#F25835;
-}
+  .sidebar a:hover {
+    color: #F25835;
+  }
 
- /*---------Menu baren flag -------*/
-.dansk {
-  display: block;
-  position: relative;
-  float:right;
-  margin-top: -69px;
-  margin-right:70px;
-  border-radius: 3px;
- }
+  /*---------Menu baren flag -------*/
+  .dansk {
+    display: block;
+    position: relative;
+    float: right;
+    margin-top: -69px;
+    margin-right: 70px;
+    border-radius: 3px;
+  }
 
-.engelsk {
-  display: block;
-  position: relative;
-  float:right;
-  margin-top: -69px;
-  margin-right:110px;
-  border-radius: 3px;
-}
+  .engelsk {
+    display: block;
+    position: relative;
+    float: right;
+    margin-top: -69px;
+    margin-right: 110px;
+    border-radius: 3px;
+  }
 
- /*---------- Login ---------*/
-.box {
-  width: 50%;
-  padding: 40px;
-  position: absolute;
-  top: 20%;
-  left: 15%;
-  background: #313c40;
-  text-align: center;
-  border-radius: 10px;
-}
+  /*---------- Login ---------*/
+  .box {
+    width: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    background: #313c40;
+    text-align: center;
+    border-radius: 10px;
+  }
 
-.box h1 {
-  font-family: 'Raleway', sans-serif;
-  color: white;
-  text-transform: uppercase;
-}
+  .box h1 {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    text-transform: uppercase;
+  }
 
-    /* design for brugernavn og kodeord bokse */
-.box input[type = "text"], .box input[type = "password"]{
-  font-family: 'Raleway', sans-serif;
-  border:0;
-  background:none;
-  display:block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #F25835;
-  padding: 14px 10px;
-  width: 50%;
-  outline: none;
-  color:white;
-  border-radius: 18px;
-  transition: 0.25s;
-}
+  /* design for brugernavn og kodeord bokse */
+  .box input[type="text"], .box input[type="password"] {
+    font-family: 'Raleway', sans-serif;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #F25835;
+    padding: 14px 10px;
+    width: 50%;
+    outline: none;
+    color: #ffffff;
+    border-radius: 18px;
+    transition: 0.25s;
+  }
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #ffffff;
-}
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #ffffff;
+  }
 
-::placeholder {
-  color: #ffffff;
-  opacity: 1; /* Firefox */
-}
+  ::placeholder {
+    color: #ffffff;
+    opacity: 1;
+    /* Firefox */
+  }
 
+  /* boksen udvider sig når musen fokuserer på en af boksene */
+  .box input[type="text"]:focus, .box input[type="password"]:focus {
+    width: 80%;
+    border-color: #5eb5eb;
+    display: flex;
+    justify-items: center;
+  }
 
-    /* boksen udvider sig når musen fokuserer på en af boksene */
-.box input[type = "text"]:focus, .box input[type = "password"]:focus{
-  width: 80%;
-  border-color: #5eb5eb;
-  display:flex;
-  justify-items: center;
+  /* design på login*/
+  .box button {
+    font-family: 'Raleway', sans-serif;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #5eb5eb;
+    padding: 14px;
+    width: 60%;
+    outline: none;
+    color: white;
+    border-radius: 18px;
+    transition: 0.25s;
+    display: block;
+  }
 
-}
-    /* design på login*/
-.box button{
-  font-family: 'Raleway', sans-serif;
-  border:0;
-  background:none;
-  display:block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #5eb5eb;
-  padding: 14px;
-  width: 60%;
-  outline: none;
-  color: white;
-  border-radius: 18px;
-  transition: 0.25s;
-  display: block;
-}
+  .box button:hover {
+    background-color: #5eb5eb;
+  }
 
-.box button:hover {
-  background-color: #5eb5eb;
-}
+  .log-ind-icon {
+    width: 8%;
+    position: absolute;
+    left: 85px;
+    top: 247px;
+  }
 
-.log-ind-icon{
-  width: 8%;
-  position: absolute;
-  left: 85px;
-  top: 247px;
-}
+  .box a {
+    text-decoration: none;
+  }
 
-.box a{
-  text-decoration: none;
-}
+  button {
+    border-color: transparent;
+  }
 
-button{
-  border-color: transparent;
-}
+  .scan {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #F25835;
+    padding: 14px 40px;
+    width: 60%;
+    outline: none;
+    color: black;
+    border-radius: 18px;
+    transition: 0.25s;
+    position: absolute;
+    top: 65%;
+    left: 21%;
+  }
 
-.scan{
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  border:0;
-  background:none;
-  display:block;
-  margin: 20px auto;
-  text-align: center;
-  background-color: #F25835;
-  padding: 14px 40px;
-  width: 60%;
-  outline: none;
-  color: black;
-  border-radius: 18px;
-  transition: 0.25s;
-  position: absolute;
-  top: 65%;
-  left: 21%;
-}
+  .scan:hover {
+    background-color: #313C40;
+    color: #FF7152;
+  }
 
-.scan:hover {
-  background-color: #313C40;
-  color: #FF7152;
-}
+  .qr-icon {
+    width: 15%;
+    position: absolute;
+    left: 12px;
+    top: 10px;
+  }
 
-.qr-icon{
-  width: 15%;
-  position: absolute;
-  left: 12px;
-  top: 10px;
-}
+  /*---------- forside.html ---------*/
+  /*-----------knapper---------*/
+  .menuknap {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: #313c40;
+    margin-top: 40%;
+    margin-left: 15%;
+    text-align: center;
+    padding: 18px 14px;
+    width: 70%;
+    color: white;
+    border-radius: 18px;
+    cursor: pointer;
+  }
 
+  .menuknap1 {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: #313c40;
+    margin-top: 10%;
+    margin-left: 15%;
+    text-align: center;
+    padding: 18px 14px;
+    width: 70%;
+    color: white;
+    border-radius: 18px;
+    cursor: pointer;
+  }
 
-/*---------- forside.html ---------*/
+  /*---------- Budskabstekst -------- */
+  .overskriftforside {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 4px;
+    font-size: 29px;
+    background-color: #313c40;
+    opacity: 0.8;
+    padding: 18px 18px;
+    color: white;
+    margin-top: 15%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 18px 18px 0px 0px;
+  }
 
-/*-----------knapper---------*/
+  .budskabstekst {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    background-color: #313c40;
+    opacity: 0.8;
+    padding: 18px 18px;
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 0px 0px 18px 18px;
+  }
 
-.menuknap {
-  position: relative;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  letter-spacing: 4px;
-  background: #313c40;
-  margin-top: 40%;
-  margin-left:15%;
-  text-align: center;
-  padding: 18px 14px;
-  width: 70%;
-  color:white;
-  border-radius: 18px;
-  cursor: pointer;
-}
-.menuknap1 {
-  position: relative;
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  letter-spacing: 4px;
-  background: #313c40;
-  margin-top: 10%;
-  margin-left:15%;
-  text-align: center;
-  padding: 18px 14px;
-  width: 70%;
-  color:white;
-  border-radius: 18px;
-  cursor: pointer;
-}
+  /*---------- Template.html ------------ */
+  /*-------- dropdown bokse -------*/
+  .custom-select {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 50%;
+    margin-left: 23%;
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
 
-/*---------- Budskabstekst -------- */
+  /* gemmer select sectionen, så det kommer frem når man dropper down*/
+  .custom-select select {
+    display: none;
+  }
 
-.overskriftforside {
-  position: relative;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 4px;
-  font-size: 29px;
-  background-color:#313c40;
-  opacity:0.8;
-  padding: 18px 18px;
-  color: white;
-  margin-top: 15%;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 18px 18px 0px 0px;
-}
+  .select-selected {
+    background-color: #313c40;
+    border-radius: 18px;
+  }
 
-.budskabstekst {
-  position: relative;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 2px;
-  background-color:#313c40;
-  opacity: 0.8;
-  padding: 18px 18px;
-  color: white;
-  font-size: 18px;
-  line-height: 25px;
-  margin-left: 10px;
-  margin-right: 10px;
-  border-radius: 0px 0px 18px 18px;
-}
+  /* design af pil ned */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 25px;
+    right: 20px;
+    width: 2px;
+    height: 10px;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
 
+  /*gør at pilen vender op ad når select sectionen er nede*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 7px;
+  }
 
-/*---------- Template.html ------------ */
+  /*design teksten i select*/
+  .select-items div, .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+  }
 
-/*-------- dropdown bokse -------*/
+  /* Design for dropdown boksen*/
+  .select-items {
+    position: absolute;
+    background-color: #313c40;
+    opacity: 0.8;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-radius: 0px 0px 18px 18px;
+  }
 
-.custom-select {
-  position: absolute;
-  font-family:'Raleway', sans-serif;
-  margin-top:50%;
-  margin-left: 23%;
-  font-size: 18px;
-  letter-spacing: 4px;
-}
-
-/* gemmer select sectionen, så det kommer frem når man dropper down*/
-.custom-select select {
-  display: none;
-}
-
-.select-selected {
-  background-color:#313c40;
-  border-radius: 18px;
-}
-
-/* design af pil ned */
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 25px;
-  right: 20px;
-  width: 2px;
-  height: 10px;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-}
-
-/*gør at pilen vender op ad når select sectionen er nede*/
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
-
-/*design teksten i select*/
-.select-items div,.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-  user-select: none;
-  font-family: 'Raleway', sans-serif;
-  padding:20px;
-}
-
-/* Design for dropdown boksen*/
-.select-items {
-  position: absolute;
-  background-color:#313c40;
-  opacity: 0.8;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  border-radius: 0px 0px 18px 18px;
-}
-
-/*hide the items when the select box is closed:*/
-.select-hide {
-  display: none;
-}
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }

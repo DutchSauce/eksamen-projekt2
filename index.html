@@ -1,51 +1,54 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-<!-- Links til font Raleway til tekst og Source Sans Pro til tal -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
-<!-- Link til burgermenu -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Link til eksterne sider, Css og JavaScript -->
-    <link rel="stylesheet" href="robotnordic.css">
-    <script src="index.js" defer></script>
-    <title>Robot Nordic</title>
-  </head>
-  <body>
 
-<!-- Kørende baggrund. Her er der kun id til JS og højden på billedet -->
-    <div id="canvas_container">
-      <canvas id="my_canvas" height="812"></canvas>
+<head>
+  <meta charset="utf-8">
+  <!-- Links til font Raleway til tekst og Source Sans Pro til tal -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+  <!-- Link til burgermenu -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Link til eksterne sider, Css og JavaScript -->
+  <link rel="stylesheet" href="robotnordic.css">
+  <script src="index.js" defer></script>
+  <title>Robot Nordic</title>
+</head>
+
+<body>
+
+  <!-- Kørende baggrund. Her er der kun id til JS og højden på billedet -->
+  <div id="canvas_container">
+    <canvas id="my_canvas" height="812"></canvas>
+  </div>
+
+  <!-- Hele menubaren -->
+  <div class="wrapper">
+
+    <!-- Menubarens indhold, alt hvad der er inde i "wrapper"-->
+    <div class="sidebar">
+      <a href="index.html"><img src="img/logo-uden-tekst.png" alt="Robot nordics logo" width="50"></a>
+
+      <img class="dansk" src="img/dansk.jpg" alt="vælg sproget dansk" width="33">
+      <img class="engelsk" src="img/engelsk.png" alt="vælg sproget engelsk" width="35">
     </div>
-
-<!-- Hele menubaren -->
-<div class="wrapper">
-
-<!-- Menubarens indhold, alt hvad der er inde i "wrapper"-->
-  <div class="sidebar">
-    <a href="index.html"><img src="img/logo-uden-tekst.png" alt="Robot nordics logo" width="50"></a>
-
-    <img class="dansk" src="img/dansk.jpg" alt="vælg sproget dansk" width="33">
-    <img class="engelsk" src="img/engelsk.png" alt="vælg sproget engelsk" width="35">
-</div>
-</div>
-<!-- Burgermenuens indhold -->
+  </div>
+  <!-- Burgermenuens indhold -->
 
 
-<form class="box" action="index.html" method="post">
-  <h1> Log ind </h1>
-  <input type="text" name="" placeholder="Brugernavn">
-  <input type="password" name="" placeholder="Kodeord">
-  <a href="forside.html"><button class="log-ind" type="button" name="button"><img class="log-ind-icon" src="img/user-check.png" alt="User med flueben">
-    Log ind</button></a>
+  <form class="box" action="index.html" method="post">
+    <h1> Log ind </h1>
+    <input type="text" name="" placeholder="Brugernavn">
+    <input type="password" name="" placeholder="Kodeord">
+    <a href="forside.html"><button class="log-ind" type="button" name="button"><img class="log-ind-icon" src="img/user-check.png" alt="User med flueben">
+        Log ind</button></a>
 
 
-</form>
+  </form>
 
-<button class="scan" type="button" name="button"><img class="qr-icon" src="img/qr_icon.png" alt="qr ikon">Scan her</button>
+  <button class="scan" type="button" name="button"><img class="qr-icon" src="img/qr_icon.png" alt="qr ikon">Scan her</button>
 
 
-  </body>
+</body>
+
 </html>
