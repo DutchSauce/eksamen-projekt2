@@ -1,78 +1,88 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-<!-- Links til font Raleway til tekst og Source Sans Pro til tal -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
-<!-- Link til burgermenu -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- Link til eksterne sider, Css og JavaScript -->
-    <link rel="stylesheet" href="robotnordic.css">
-    <script src="index.js" defer></script>
-    <title>Robot Nordic</title>
-  </head>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Links til font Raleway til tekst og Source Sans Pro til tal -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+  <!-- Link til burgermenu -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Link til eksterne sider, Css og JavaScript -->
+  <link rel="stylesheet" href="robotnordic.css">
+  <script src="index.js" defer></script>
+  <title>Robot Nordic</title>
+</head>
+
 <body>
 
-<!-- Kørende baggrund. Her er der kun id til JS og højden på billedet -->
-<div id="canvas_container">
+  <!-- Kørende baggrund. Her er der kun id til JS og højden på billedet -->
+  <div id="canvas_container">
     <canvas id="my_canvas" height="812"></canvas>
-</div>
+  </div>
 
-<!-- Hele menubaren -->
-<div class="wrapper">
+  <!-- Hele menubaren -->
+  <div class="wrapper">
 
-<!-- Menubarens indhold, alt hvad der er inde i "wrapper"-->
-<div class="sidebar">
-  <a href="#forside.html"><img src="img/logo-uden-tekst.png" alt="Robot nordics logo" width="50"></a>
+    <!-- Menubarens indhold, alt hvad der er inde i "wrapper"-->
+    <div class="sidebar">
+      <a href="#forside.html"><img src="img/logo-uden-tekst.png" alt="Robot nordics logo" width="50"></a>
 
-  <img class="dansk" src="img/dansk.jpg" alt="vælg sproget dansk" width="33">
-  <img class="engelsk" src="img/engelsk.png" alt="vælg sproget engelsk" width="35">
+      <img class="dansk" src="img/dansk.jpg" alt="vælg sproget dansk" width="33">
+      <img class="engelsk" src="img/engelsk.png" alt="vælg sproget engelsk" width="35">
 
-<!-- Burgermenuens indhold -->
-    <div id="myLinks">
+      <!-- Burgermenuens indhold -->
+      <div id="myLinks">
         <a href="forside.html">Forside</a>
         <a href="template.html">Create template</a>
         <a href="panel.html">Control panel</a>
-    </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
         <i class="fa fa-bars"></i>
-        </a>
+      </a>
     </div>
-</div>
+  </div>
 
-<!-- Knapper til undersider -->
-<main>
+  <!-- Knapper til undersider -->
+  <main>
     <a href="template.html">
-        <button class="menuknap" type="button"><img src="img/file-text.png" alt="Fil med tekst"> Lav skabelon</button>
+      <button class="menuknap" type="button"><img src="img/file-text.png" alt="Fil med tekst"> Lav skabelon</button>
     </a>
     <a href="panel.html">
-        <button class="menuknap1" type="button"><img src="img/calendar.png" alt="Kalender ikon"> Kontrol Panel</button>
+      <button class="menuknap1" type="button"><img src="img/calendar.png" alt="Kalender ikon"> Kontrol Panel</button>
     </a>
 
-<!-- Budskabsteksten -->
-<div class="">
-<h1 class="overskriftforside">
-  <img src="img/logo-uden-tekst-hvid.png" alt="Robot nordics logo">
-   <b>ROBOT NORDIC</b>
-</h1>
+    <!-- Budskabsteksten -->
+    <div class="custom-select2">
+      <select class="" name="">
+      <option value="0">
+      <h1 class="overskriftforside">
+        <img src="img/logo-uden-tekst-hvid.png" alt="Robot nordics logo">
+        <b>ROBOT NORDIC</b>
+      </h1>
+      </option>
 
-<h2 class="budskabstekst">
-    <b>Fra det øjeblik du træder ind over dørtrinet hos os, handler det om dig og din forretning</b>
-    <br><br>
-    Vi i Robot Nordic kan hjælpe din produktionsvirksomhed med at blive mere effektiv. <br>
-    Kvaliteten og produktionen vil vi effektivisere og Robot Nordic står for hele processen. <br> <br>
-    Vores passion er at drive en virksomhed, hvor den enkelte kunde er i fokus. <br>
+        <h2 class="budskabstekst">
+
+
+
+          <!--<b>Fra det øjeblik du træder ind over dørtrinet hos os, handler det om dig og din forretning</b>-->
+          Vi i Robot Nordic kan hjælpe din produktionsvirksomhed med at blive mere effektiv. <br>
+          Kvaliteten og produktionen vil vi effektivisere og Robot Nordic står for hele processen. <br> <br>
+          <!--Vores passion er at drive en virksomhed, hvor den enkelte kunde er i fokus. <br>
     Vi ønsker at producere maskiner, som er tilpasset den enkelte kundes behov. Det bliver muligt for kunden at vælge bestemte komponenter på maskinerne, så kunden får den optimale tilfredsstillelse. <br> <br>
     Samtidig er vi også opmærksom på prisen. Med en høj kvalitet og fokus på kunderne vil vi være billigere end vores konkurrenter.
-    Vi vil nå vores passion med hjælp fra alle vores hårdtarbejdende medarbejdere, som har stor erfaring fra robot- og procesindustrien.
-</h2>
-</div>
+    Vi vil nå vores passion med hjælp fra alle vores hårdtarbejdende medarbejdere, som har stor erfaring fra robot- og procesindustrien.-->
+        </h2>
+        <option value="1">Læs mere...</option>
+      </select>
+    </div>
 
-</main>
+  </main>
 
 
 
 </body>
+
 </html>
