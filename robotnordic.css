@@ -267,6 +267,10 @@
     border-radius: 5px 5px 0px 0px;
   }
 
+  .overskriftforside img{
+    width: 10%;
+  }
+
   .budskabstekst {
     position: relative;
     font-family: 'Raleway', sans-serif;
