@@ -111,6 +111,7 @@
     color: #ffffff;
     border-radius: 18px;
     transition: 0.25s;
+    letter-spacing: 2px;
   }
 
   ::-webkit-input-placeholder {
@@ -183,7 +184,7 @@
     width: 60%;
     outline: none;
     color: black;
-    border-radius: 18px;
+    border-radius: 5px;
     transition: 0.25s;
     position: absolute;
     top: 65%;
@@ -216,7 +217,7 @@
     padding: 18px 14px;
     width: 70%;
     color: white;
-    border-radius: 18px;
+    border-radius: 5px;
     cursor: pointer;
   }
 
@@ -232,7 +233,7 @@
     padding: 18px 14px;
     width: 70%;
     color: white;
-    border-radius: 18px;
+    border-radius: 5px;
     cursor: pointer;
   }
 
@@ -263,7 +264,7 @@
     margin-top: 15%;
     margin-left: 10px;
     margin-right: 10px;
-    border-radius: 18px 18px 0px 0px;
+    border-radius: 5px 5px 0px 0px;
   }
 
   .budskabstekst {
@@ -278,7 +279,7 @@
     line-height: 25px;
     margin-left: 10px;
     margin-right: 10px;
-    border-radius: 0px 0px 18px 18px;
+    border-radius: 0px 0px 5px 5px;
   }
 
   /*---------- Template.html ------------ */
