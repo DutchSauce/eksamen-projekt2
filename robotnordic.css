@@ -134,7 +134,7 @@
   }
 
   /* design på login*/
-  .box button {
+  .log-ind {
     font-family: 'Raleway', sans-serif;
     border: 0;
     background: none;
@@ -143,7 +143,7 @@
     text-align: center;
     border: 2px solid #5eb5eb;
     padding: 14px;
-    width: 60%;
+    width: 50%;
     outline: none;
     color: white;
     border-radius: 18px;
@@ -151,15 +151,21 @@
     display: block;
   }
 
-  .box button:hover {
+  .log-ind:hover {
     background-color: #5eb5eb;
+  }
+
+  .log-ind a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 12px;
   }
 
   .log-ind-icon {
     width: 8%;
     position: absolute;
     left: 85px;
-    top: 240px;
+    top: 243px;
   }
 
   .box a {
@@ -253,78 +259,7 @@
 
 /*-------- dropdown bokse -------*/
 
-  .custom-select2{
-    position: absolute;
-    font-family: 'Raleway', sans-serif;
-    margin-top: 50%;
-    padding-top: -100px;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 18px;
-    letter-spacing: 4px;
-  }
-
-  .custom-select2 h1{
-    font-size: 24px;
-    border-radius: 5px;
-  }
-
-  /* gemmer select sectionen, så det kommer frem når man dropper down*/
-  .custom-select select {
-    display: none;
-  }
-
-  .select-selected {
-    background-color: #313c40;
-    border-radius: 18px;
-  }
-
-  /* design af pil ned */
-  .select-selected:after {
-    position: absolute;
-    content: "";
-    top: 25px;
-    right: 20px;
-    width: 2px;
-    height: 10px;
-    border: 6px solid transparent;
-    border-color: #fff transparent transparent transparent;
-  }
-
-  /*gør at pilen vender op ad når select sectionen er nede*/
-  .select-selected.select-arrow-active:after {
-    border-color: transparent transparent #fff transparent;
-    top: 7px;
-  }
-
-  /*design teksten i select*/
-  .select-items div, .select-selected {
-    color: #ffffff;
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-    cursor: pointer;
-    user-select: none;
-    font-family: 'Raleway', sans-serif;
-    padding: 20px;
-  }
-
-  /* Design for dropdown boksen*/
-  .select-items {
-    position: absolute;
-    background-color: #313c40;
-    opacity: 0.8;
-    top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 99;
-    border-radius: 0px 0px 18px 18px;
-  }
-
-  /*hide the items when the select box is closed:*/
-  .select-hide {
-    display: none;
-  }
+  
 
   /*---------- Budskabstekst -------- */
   .overskriftforside {
