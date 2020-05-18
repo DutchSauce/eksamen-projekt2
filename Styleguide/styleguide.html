@@ -1,70 +1,111 @@
 <!doctype html>
 <html lang="da">
-        <head>
-        <meta charset="utf=8">
-        <title>Style guide</title>
-        <link href="styleguide.css" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
-        </head>
-    <body>
-<header>Style Guide Projekt 6</header>
 
-<h1 class="overskrifter"> Typografi</h1>
-    <br>
-        <a> Der er to typer typografi da Raleway er udfordrende at læse når det kommer til tal. <br>
-            Derfor er Source Sans Pro kun til brug i tal. 
-        </a>
-    <br>
-    <br>
-        <a class="raleway"> 
-            Raleway <br>
-            Bruges kun i tekst <br>
-            ABC <br>
-            abc <br>
-            <b>ABC <br>
-            abc</b> <br>
-            HTML: link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet" 
-        </a>
-    <br>
-    <br>
-        <a class="source"> 
-            Source Sans Pro <br>
-            Bruges kun til tal <br>
-            12345 <br>
-            <b> 12345 </b> <br>
-            HTML: link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet" 
-        </a>
+<head>
+  <meta charset="utf-8">
+  <title>Style guide</title>
+  <link href="styleguide.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet">
+</head>
 
+<body>
+  <header>
+    <h1>STYLEGUIDE - ROBOT NORDIC</h1>
+    <p>Gruppe 14</p>
+  </header>
 
-<h2 class="overskrifter"> Farver </h2>
-    <br> 
-        <a class="hvid"> #EBFFF3 </a>
-        <a class="grøn"> #72A895 </a>
-        <a class="lysorange"> #FF7152 </a>
-        <a class="orange"> #F25835 </a>
-        <a class="sort"> #313C40 </a>
-    <br>
-    <br>
-    <br>
+  <section class="typo">
 
-<h3 class="overskrifter"> Former </h3>
+    <h2 class="overskrifter"> Typografi</h2>
     <br>
-        <a> Disse former skal bruges i baggrunden på hjemmesiden, for at skabe en levende oplavelse. </a>
-    <br>
-        <img class="form" src="6.png" alt="sekskantet figur som skal være i baggrunden af robot nordics side">
-    <br> 
-        <a> Disse former skal bruges til sidens knapper.<br>
-            Knapperne har en hover effekt på desktop versionen, <br> 
-            og på mobil versionen  er der en onclick effekt.
-        </a>
-    <br>
-    <br>
-    <a class="orangeknap"> <b> Knap </b> </a>
-    <br>
-    <br>
-    <br>
-    <a class="sortknap"> <b>Knap</b></a>
+    <p> Der er to typer typografi da Raleway er udfordrende at læse når det kommer til tal. <br>
+      Derfor er Source Sans Pro kun til brug i tal.
+    </p>
+    <div class="grafi">
 
-    </body>
+      <p class="raleway">
+        Raleway <br>
+        Bruges kun i tekst <br><br>
+        ABC <b>ABC</b><br>
+        abc <b>abc</b><br><br>
+        <a href="https://fonts.google.com/specimen/Raleway?query=ralewa" target="_blank">HTML: link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet"</a>
+      </p>
+      <p class="source">
+        Source Sans Pro <br>
+        Bruges kun til tal <br><br>
+        12345 <br>
+        <b> 12345 </b> <br><br>
+        <a href="https://fonts.google.com/specimen/Source+Sans+Pro?query=sour" target="_blank">HTML: link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap" rel="stylesheet"</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="farve">
+    <h2 class="overskrifter"> Farver </h2>
+    <p>Her er de farver vi bruger til vores brugergrænseflade.</p>
+    <div class="colors">
+      <a class="hvid">#EBFFF3</a>
+      <a class="blue">#5EB5EB</a>
+      <a class="lysorange">#FF7152</a>
+      <a class="orange">#F25835</a>
+      <a class="sort">#313C40</a>
+    </div>
+  </section>
+  <section class="former">
+    <h3 class="overskrifter">Billeder</h3>
+    <p> Disse billeder skal bruges i baggrunden på hjemmesiden, for at skabe en levende oplavelse. <br>
+      Også er der logoet som vil blive vist i top venstre hjørne.</p>
+    <img class="form" src="6.png" alt="sekskantet figur som skal være i baggrunden af robot nordics side">
+    <img class="form2" src="/img/logo-uden-tekst.png" alt="Robot Nordics Logo">
+  </section>
+  <section class="ik-knap">
+    <h4 class="overskrifter">Ikoner</h4>
+    <p> Disse ikoner skal bruges til sidens knapper.<br>
+    </p>
+    <div class="icons">
+      <img class="qr" src="/img/qr_icon.png" alt="QR scan ikonet">
+      <img class="user" src="/img/user-check.png" alt="Person med flueben som log ind ikon">
+    </div>
+</section>
+<section class="knap-sec">
+    <h4 class="overskrifter">Knapper</h4>
+    <p>Knapperne har en hover effekt på desktop versionen, <br>
+      og på mobil versionen er der en onclick effekt.</p>
+    <div class="knapper">
+      <a class="orangeknap"><b>Knap</b></a>
+      <a class="blueknap"><b>Knap</b></a>
+    </div>
+</section>
+<section  class="css-bag">
+<h4 class="overskrifter">CSS</h4>
+<p>Her ses css koden bag knapperne. Og koden her er fra den blå knap.</p>
+
+    <div class="kode">
+      <p>
+        .blueknap {<br>
+        font-family: 'Raleway', sans-serif;<br>
+        border: 0;<br>
+        background: none;<br>
+        display: block;<br>
+        margin: 20px 140px auto;<br>
+        text-align: center;<br>
+        border: 2px solid #5eb5eb;<br>
+        padding: 14px;<br>
+        width: 5%;<br>
+        outline: none;<br>
+        color: #000000;<br>
+        border-radius: 18px;<br>
+        transition: 0.25s;<br>
+        display: block;<br>
+      }
+<br><br>
+      .blueknap:hover {<br>
+        background-color: #5eb5eb;<br>
+        color: #ffffff;<br>
+      }</p>
+      </div>
+</section>
+</body>
+
 </html>
