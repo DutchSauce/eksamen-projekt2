@@ -45,14 +45,22 @@
 </div>
 
 <!-- drop down med palle -->
-<div class="custom-select" style="width:200px;">
-    <select>
-      <option value="0">Palle</option>
-      <option value="1">Fyld</option>
-      <option value="2">Dimension</option>
-      <option value="3">Pakke Mønster</option>
-    </select>
+<h2>Clickable Dropdown</h2>
+<p>Click on the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Palle Info</button>
+  <div id="myDropdown" class="dropdown-content">
+    <form action="/action_page.php"><br>
+      <label for="fname">Palle Navn:</label><br>
+      <input type="text" id="fname" name="fname" value="mm"><span>&#8505;</span><br><br>
+      <label for="fname">Palle type:</label><br>
+      <input type="text" id="fname" name="fname" value="%"><br><br>
+      <input type="submit" value="Godkend" onclick="show_alert();">
+    </form>
   </div>
+</div>
+
 
 </body>
 </html>

@@ -272,68 +272,46 @@ button{
 
 /*-------- dropdown bokse -------*/
 
-.custom-select {
-  position: absolute;
-  font-family:'Raleway', sans-serif;
-  margin-top:50%;
-  margin-left: 23%;
-  font-size: 18px;
-  letter-spacing: 4px;
-}
-
-/* gemmer select sectionen, så det kommer frem når man dropper down*/
-.custom-select select {
-  display: none;
-}
-
-.select-selected {
-  background-color:#313c40;
-  border-radius: 18px;
-}
-
-/* design af pil ned */
-.select-selected:after {
-  position: absolute;
-  content: "";
-  top: 25px;
-  right: 20px;
-  width: 2px;
-  height: 10px;
-  border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
-}
-
-/*gør at pilen vender op ad når select sectionen er nede*/
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
-
-/*design teksten i select*/
-.select-items div,.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
   cursor: pointer;
-  user-select: none;
-  font-family: 'Raleway', sans-serif;
-  padding:20px;
+  width: 250px;
 }
 
-/* Design for dropdown boksen*/
-.select-items {
-  position: absolute;
-  background-color:#313c40;
-  opacity: 0.8;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  border-radius: 0px 0px 18px 18px;
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
 }
 
-/*hide the items when the select box is closed:*/
-.select-hide {
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 17%;
+  padding-top: 15%;
+
+}
+
+.dropdown-content {
   display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 20px;
+  width: 250px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
