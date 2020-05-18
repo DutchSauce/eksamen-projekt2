@@ -1,24 +1,24 @@
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
 a {
-    font-size: 14px;
-    line-height: 10px;
+  font-size: 14px;
+  line-height: 10px;
 }
 
-body{
+body {
   background-color: #e0e0e0;
 }
 
 header {
-    width: 100%;
-    background-color: #313c40;
-    height: 100px;
+  width: 100%;
+  background-color: #313c40;
+  height: 100px;
 }
 
-h1{
+h1 {
   color: #ffffff;
   font-size: 40px;
   text-align: center;
@@ -27,26 +27,26 @@ h1{
   letter-spacing: 2px;
 }
 
-.typo{
-background-color: #ffffff;
-height: 350px;
+.typo {
+  background-color: #ffffff;
+  height: 350px;
 }
 
 .overskrifter {
-    font-size:25px;
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    letter-spacing: 2px;
-    font-weight: 200;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 200;
 }
 
-p{
+p {
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 1px;
   text-align: center;
 }
 
-.grafi{
+.grafi {
   display: flex;
   flex-direction: row;
   margin-top: 50px;
@@ -55,30 +55,30 @@ p{
   padding-left: 100px;
 }
 
-.grafi a{
+.grafi a {
   text-decoration: none;
   color: #000000;
 }
 
 .raleway {
-    font-family: 'Raleway', sans-serif;
-}
-
-.source {
-    margin-top: -8px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-.source a{
   font-family: 'Raleway', sans-serif;
 }
 
-.farve{
+.source {
+  margin-top: -8px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.source a {
+  font-family: 'Raleway', sans-serif;
+}
+
+.farve {
   height: 350px;
 }
 
 .colors {
-  padding:30px;
+  padding: 30px;
   border-radius: 15px;
   margin-left: 357px;
   margin-top: 87.5px;
@@ -86,80 +86,89 @@ p{
 }
 
 .hvid {
-    background-color:#ebfff3;
-    padding:30px;
-    border-radius: 15px;
-    }
-
-.green {
-    background-color:#72a895;
-    padding:30px;
-    border-radius: 15px;
-    margin-left: 20px;
-    }
-
-.lysorange{
-    background-color:#ff7152;
-    padding:30px;
-    border-radius: 15px;
-    margin-left: 20px;
-    margin-top: 73px;
+  background-color: #ebfff3;
+  padding: 30px;
+  border-radius: 15px;
 }
 
-.orange{
-    background-color:#f25835f3;
-    padding:30px;
-    border-radius: 15px;
-    margin-left: 20px;
-    }
+.green {
+  background-color: #72a895;
+  padding: 30px;
+  border-radius: 15px;
+  margin-left: 20px;
+}
 
-.sort{
-    background-color:#313c40;
-    padding:30px;
-    border-radius: 15px;
-    margin-left: 20px;
-    color: #ffffff;
-    }
+.lysorange {
+  background-color: #ff7152;
+  padding: 30px;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-top: 73px;
+}
 
-  .blue{
-        background-color:#5eb5eb;
-        padding:30px;
-        border-radius: 15px;
-        margin-left: 20px;
-        color: #000000;
-        }
+.orange {
+  background-color: #f25835f3;
+  padding: 30px;
+  border-radius: 15px;
+  margin-left: 20px;
+}
 
-.former{
+.sort {
+  background-color: #313c40;
+  padding: 30px;
+  border-radius: 15px;
+  margin-left: 20px;
+  color: #ffffff;
+}
+
+.blue {
+  background-color: #5eb5eb;
+  padding: 30px;
+  border-radius: 15px;
+  margin-left: 20px;
+  color: #000000;
+}
+
+.former {
   background-color: #ffffff;
 }
 
 .form {
   margin-top: 50px;
   margin-bottom: 50px;
-    width: 150px;
-    margin-left: 430px;
+  width: 150px;
+  margin-left: 430px;
 }
 
 .form2 {
   margin-top: 50px;
   margin-bottom: 50px;
-    margin-left: 240px;
+  margin-left: 240px;
+  width: 10%;
 }
 
-.ik-knap{
+.ik-knap {
   margin-bottom: 50px;
 }
 
-.icons{
+.icons {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  margin-left: 330px;
+  justify-content: space-between;
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.knapper{
+.qr {
+  width: 7%;
+  margin-left: 470px;
+}
+
+.user {
+  margin-right: 460px;
+}
+
+.knapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -182,6 +191,7 @@ p{
   transition: 0.25s;
   display: block;
 }
+
 .orangeknap:hover {
   background-color: #f25835;
   color: #ffffff;
@@ -203,7 +213,8 @@ p{
   transition: 0.25s;
   display: block;
 }
+
 .sortknap:hover {
-    background-color: #5eb5eb;
-    color: #ffffff;
+  background-color: #5eb5eb;
+  color: #ffffff;
 }
