@@ -172,11 +172,17 @@ p {
   margin-right: 460px;
 }
 
+.knap-sec{
+  background-color: #ffffff;
+  height: 200px;
+}
+
 .knapper {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 .orangeknap {
@@ -184,7 +190,7 @@ p {
   border: 0;
   background: none;
   display: block;
-  margin: 20px 140px auto;
+  margin: 20px 10px auto;
   text-align: center;
   border: 2px solid #f25835;
   padding: 14px;
@@ -201,12 +207,12 @@ p {
   color: #ffffff;
 }
 
-.sortknap {
+.blueknap {
   font-family: 'Raleway', sans-serif;
   border: 0;
   background: none;
   display: block;
-  margin: 20px 140px auto;
+  margin: 20px 10px auto;
   text-align: center;
   border: 2px solid #5eb5eb;
   padding: 14px;
@@ -218,7 +224,39 @@ p {
   display: block;
 }
 
-.sortknap:hover {
+.blueknap:hover {
   background-color: #5eb5eb;
   color: #ffffff;
+}
+
+.css-bag{
+  height: 550px;
+}
+
+.kode{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 20px;
+  margin-left: 500px;
+  margin-right: 500px;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.kode p{
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.html-code{
+  margin-left: 320px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.css-code{
+  margin-right: 320px;
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 1px;
 }
