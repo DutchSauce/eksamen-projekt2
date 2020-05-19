@@ -60,6 +60,17 @@
   color:#F25835;
 }
 
+ /*---------Log ud ikon-------*/
+
+ .log-out{
+   width: 6%;
+   display: block;
+   position: relative;
+   float: right;
+   margin-top: -68px;
+   margin-right: 170px;
+ }
+
  /*---------Menu baren flag -------*/
 .dansk {
   display: block;
