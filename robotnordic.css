@@ -24,7 +24,7 @@
   width: 100%;
   margin: auto;
   background-color: #5f5c5c;
-  position: absolute;
+  position: sticky;
 }
 
 .sidebar {
@@ -36,7 +36,6 @@
 
 .sidebar #myLinks {
   display: none;
-
 }
 
 .sidebar a {
@@ -46,7 +45,6 @@
   text-decoration: none;
   font-size: 30px;
   display: block;
-  position: relative;
 }
 
 .sidebar a.icon {
@@ -63,7 +61,7 @@
  /*---------Log ud ikon-------*/
 
  .log-out{
-   width: 6%;
+   width: 15%;
    display: block;
    position: relative;
    float: right;
@@ -144,7 +142,7 @@
 
 }
     /* design på login*/
-.box button{
+.log-ind{
   font-family: 'Raleway', sans-serif;
   border:0;
   background:none;
@@ -153,7 +151,7 @@
   text-align: center;
   border: 2px solid #5eb5eb;
   padding: 14px;
-  width: 60%;
+  width: 50%;
   outline: none;
   color: white;
   border-radius: 18px;
@@ -161,15 +159,20 @@
   display: block;
 }
 
-.box button:hover {
+.log-ind:hover {
   background-color: #5eb5eb;
 }
 
+.log-ind a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .log-ind-icon{
-  width: 8%;
+  width: 7%;
   position: absolute;
-  left: 85px;
-  top: 247px;
+  left: 80px;
+  top: 243px;
 }
 
 .box a{
@@ -246,14 +249,74 @@ button{
   color:white;
   border-radius: 18px;
 }
+
+/*-------- budskabstekst ------*/ 
 .custom-select {
   position: absolute;
   font-family: 'Raleway', sans-serif;
   margin-top: 50%;
-  margin-left: 23%;
+  margin-left: 1%;
+  padding: 18px 14px;
+  width: 90%;
   font-size: 18px;
   letter-spacing: 4px;
 }
+
+  /* gemmer select sectionen, så det kommer frem når man dropper down*/
+  .custom-select select {
+    display: none;
+  }
+
+  .select-selected {
+    background-color: #313c40;
+    border-radius: 18px;
+  }
+
+  /* design af pil ned */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 30px;
+    width: 2px;
+    height: 10px;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+
+  /*gør at pilen vender op ad når select sectionen er nede*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 30%;
+  }
+
+  /*design teksten i select*/
+  .select-items div, .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+  }
+
+  /* Design for dropdown boksen*/
+  .select-items {
+    position: absolute;
+    background-color: #313c40;
+    opacity: 0.8;
+    top: 80%;
+    margin-left: 1%;
+    width: 91%;
+    border-radius: 0px 0px 18px 18px;
+  }
+
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
 
 /*---------- Budskabstekst -------- */
 
@@ -427,3 +490,43 @@ button{
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+
+/*ccs for infoknap*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
