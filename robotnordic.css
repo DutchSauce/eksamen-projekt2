@@ -361,6 +361,7 @@ button{
   display: none;
   background-color: white;
   overflow: hidden;
+  position: relative;
 }
 
 .dropbtn {
@@ -370,6 +371,7 @@ button{
   font-size: 16px;
   border: none;
   cursor: pointer;
+  width: 100%;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -378,7 +380,7 @@ button{
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: inline;
 }
 
 .dropdown-content {
