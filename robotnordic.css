@@ -411,6 +411,13 @@ button{
 
 /*ccs for infoknap*/
 /* The Modal (background) */
+#myBtn {
+  width: 32px;
+  height: 32px;
+  background: url(img/infoknap.png);
+  background-repeat: no-repeat;
+  border-radius: 100%;
+}
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -426,7 +433,7 @@ button{
 }
 
 /* Modal Content */
-.modal-content {
+.infoknap-content {
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
