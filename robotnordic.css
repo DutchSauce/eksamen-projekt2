@@ -250,7 +250,7 @@ button{
   border-radius: 18px;
 }
 
-/*-------- budskabstekst ------*/ 
+/*-------- budskabstekst ------*/
 .custom-select {
   position: absolute;
   font-family: 'Raleway', sans-serif;
@@ -412,7 +412,7 @@ button{
   font-size: 25px;
   transition: 0.4s;
   position: relative;
-  margin-top: 50%;
+  margin-top: 20%;
 }
 
 .accordion2 {
@@ -444,7 +444,7 @@ button{
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 18px 18px;
   display: none;
   background-color: white;
   overflow: hidden;
