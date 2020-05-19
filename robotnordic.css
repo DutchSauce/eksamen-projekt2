@@ -24,7 +24,7 @@
   width: 100%;
   margin: auto;
   background-color: #5f5c5c;
-  position: absolute;
+  position: sticky;
 }
 
 .sidebar {
@@ -36,7 +36,6 @@
 
 .sidebar #myLinks {
   display: none;
-
 }
 
 .sidebar a {
@@ -46,7 +45,6 @@
   text-decoration: none;
   font-size: 30px;
   display: block;
-  position: relative;
 }
 
 .sidebar a.icon {
@@ -251,14 +249,74 @@ button{
   color:white;
   border-radius: 18px;
 }
+
+/*-------- budskabstekst ------*/
 .custom-select {
   position: absolute;
   font-family: 'Raleway', sans-serif;
   margin-top: 50%;
-  margin-left: 23%;
+  margin-left: 1%;
+  padding: 18px 14px;
+  width: 90%;
   font-size: 18px;
   letter-spacing: 4px;
 }
+
+  /* gemmer select sectionen, så det kommer frem når man dropper down*/
+  .custom-select select {
+    display: none;
+  }
+
+  .select-selected {
+    background-color: #313c40;
+    border-radius: 18px;
+  }
+
+  /* design af pil ned */
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 30px;
+    width: 2px;
+    height: 10px;
+    border: 6px solid transparent;
+    border-color: #fff transparent transparent transparent;
+  }
+
+  /*gør at pilen vender op ad når select sectionen er nede*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent #fff transparent;
+    top: 30%;
+  }
+
+  /*design teksten i select*/
+  .select-items div, .select-selected {
+    color: #ffffff;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Raleway', sans-serif;
+    padding: 20px;
+  }
+
+  /* Design for dropdown boksen*/
+  .select-items {
+    position: absolute;
+    background-color: #313c40;
+    opacity: 0.8;
+    top: 80%;
+    margin-left: 1%;
+    width: 91%;
+    border-radius: 0px 0px 18px 18px;
+  }
+
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
 
 /*---------- Budskabstekst -------- */
 
@@ -343,26 +401,50 @@ button{
 -------*/
 
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #313C40;
+  color: #ffffff;
   cursor: pointer;
-  padding: 18px;
+  padding: 28px;
   width: 100%;
   border: none;
   text-align: center;
   outline: none;
-  font-size: 15px;
+  font-size: 25px;
   transition: 0.4s;
   position: relative;
   margin-top: 20%;
 }
 
-.active, .accordion:hover {
-  background-color: #ccc;
+.accordion2 {
+  background-color: #313C40;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 28px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 25px;
+  transition: 0.4s;
+  position: relative;
+  margin-top: 10%;
+}
+
+
+.accordion:after {
+  content: '\25be';
+  float: right;
+  transform: scale(1.5);
+}
+
+.accordion2:after {
+  content: '\25be';
+  float: right;
+  transform: scale(1.5);
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 18px 18px;
   display: none;
   background-color: white;
   overflow: hidden;
@@ -370,7 +452,7 @@ button{
 }
 
 .dropbtn {
-  background-color: #3498DB;
+  background-color: #313C40;
   color: white;
   padding: 16px;
   font-size: 16px;
