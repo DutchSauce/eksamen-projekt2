@@ -144,7 +144,7 @@
 
 }
     /* design på login*/
-.box button{
+.log-ind{
   font-family: 'Raleway', sans-serif;
   border:0;
   background:none;
@@ -153,7 +153,7 @@
   text-align: center;
   border: 2px solid #5eb5eb;
   padding: 14px;
-  width: 60%;
+  width: 50%;
   outline: none;
   color: white;
   border-radius: 18px;
@@ -161,15 +161,20 @@
   display: block;
 }
 
-.box button:hover {
+.log-ind:hover {
   background-color: #5eb5eb;
 }
 
+.log-ind a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .log-ind-icon{
-  width: 8%;
+  width: 7%;
   position: absolute;
-  left: 85px;
-  top: 247px;
+  left: 80px;
+  top: 243px;
 }
 
 .box a{
