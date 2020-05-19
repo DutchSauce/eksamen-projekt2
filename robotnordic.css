@@ -338,22 +338,46 @@ button{
 -------*/
 
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #313C40;
+  color: #ffffff;
   cursor: pointer;
-  padding: 18px;
+  padding: 28px;
   width: 100%;
   border: none;
   text-align: center;
   outline: none;
-  font-size: 15px;
+  font-size: 25px;
   transition: 0.4s;
   position: relative;
-  margin-top: 20%;
+  margin-top: 50%;
 }
 
-.active, .accordion:hover {
-  background-color: #ccc;
+.accordion2 {
+  background-color: #313C40;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 28px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 25px;
+  transition: 0.4s;
+  position: relative;
+  margin-top: 10%;
+}
+
+
+.accordion:after {
+  content: '\25be';
+  float: right;
+  transform: scale(1.5);
+}
+
+.accordion2:after {
+  content: '\25be';
+  float: right;
+  transform: scale(1.5);
 }
 
 .panel {
@@ -365,7 +389,7 @@ button{
 }
 
 .dropbtn {
-  background-color: #3498DB;
+  background-color: #313C40;
   color: white;
   padding: 16px;
   font-size: 16px;
