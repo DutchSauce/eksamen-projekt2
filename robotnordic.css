@@ -61,7 +61,7 @@
  /*---------Log ud ikon-------*/
 
  .log-out{
-   width: 6%;
+   width: 15%;
    display: block;
    position: relative;
    float: right;
@@ -142,7 +142,7 @@
 
 }
     /* design på login*/
-.box button{
+.log-ind{
   font-family: 'Raleway', sans-serif;
   border:0;
   background:none;
@@ -151,7 +151,7 @@
   text-align: center;
   border: 2px solid #5eb5eb;
   padding: 14px;
-  width: 60%;
+  width: 50%;
   outline: none;
   color: white;
   border-radius: 18px;
@@ -159,15 +159,20 @@
   display: block;
 }
 
-.box button:hover {
+.log-ind:hover {
   background-color: #5eb5eb;
 }
 
+.log-ind a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .log-ind-icon{
-  width: 8%;
+  width: 7%;
   position: absolute;
-  left: 85px;
-  top: 247px;
+  left: 80px;
+  top: 243px;
 }
 
 .box a{
@@ -419,6 +424,7 @@ button{
   display: none;
   background-color: white;
   overflow: hidden;
+  position: relative;
 }
 
 .dropbtn {
@@ -428,6 +434,7 @@ button{
   font-size: 16px;
   border: none;
   cursor: pointer;
+  width: 100%;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -436,7 +443,7 @@ button{
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: inline;
 }
 
 .dropdown-content {
@@ -459,3 +466,43 @@ button{
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+
+/*ccs for infoknap*/
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
