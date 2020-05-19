@@ -246,6 +246,14 @@ button{
   color:white;
   border-radius: 18px;
 }
+.custom-select {
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 50%;
+  margin-left: 23%;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
 
 /*---------- Budskabstekst -------- */
 

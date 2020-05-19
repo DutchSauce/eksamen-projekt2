@@ -1,3 +1,4 @@
+console.log("Hello world!");
 /*--------- Kørende baggrund ----------*/
 var bg = new Image();
 bg.src = "img/baggrund.png";
@@ -40,7 +41,6 @@ function myFunction() {
       x.style.display = "block";
     }
   }
-
 
 
 /* ----------- drop down js
