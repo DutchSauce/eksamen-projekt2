@@ -1,3 +1,4 @@
+/* Accordion funktion */
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -33,6 +34,9 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+
 
 // infoknap JS
 var modal = document.getElementById("myModal");
