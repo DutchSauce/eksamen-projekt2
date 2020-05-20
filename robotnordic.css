@@ -614,7 +614,7 @@ button{
   position: absolute;
   text-align: center;
   top: 670px;
-  left: 90px;
+  left: 70px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -636,6 +636,8 @@ button{
 .flex-knapper-pl a{
   text-decoration: none;
   color: #ff7152;
+  display: block;
+  letter-spacing: 2px;
 }
 
 .pak{
@@ -651,6 +653,17 @@ button{
   transition: 0.25s;
   display: block;
 }
+
+.back-pil{
+  position: absolute;
+  top: 115px;
+  left: 27px;
+}
+
+.back-pil img{
+  width: 35%;
+}
+
 /*ccs for infoknap*/
 /* The Modal (baggrund) */
 #myBtn {
