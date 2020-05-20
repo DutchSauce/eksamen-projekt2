@@ -24,30 +24,25 @@
     <canvas id="my_canvas" height="812"></canvas>
 </div>
 
-<!-- Hele menubaren -->
+  <!-- Hele menubaren -->
   <div class="wrapper">
 
-<!-- Menubarens indhold, alt hvad der er inde i "wrapper"-->
+    <!-- Menubarens indhold, alt hvad der er inde i "wrapper"-->
     <div class="sidebar">
       <a href="forside.html"><img src="img/logo-uden-tekst.png" alt="Robot nordics logo" width="50"></a>
+      <a href="index.html" style="position: absolute; margin-left: 170px; top: 74px;"><img title="Log ud" class="log-out" src="img/log-out.png" alt="En pil der peger væk fra en dør"></a>
+      <img class="dansk" src="img/dansk.jpg" alt="vælg sproget dansk" width="33">
+      <img class="engelsk" src="img/engelsk.png" alt="vælg sproget engelsk" width="35">
 
-
-
-  <img class="log-out" src="img/log-out.png" alt="En pil der peger væk fra en dør">
-
-
-    <img class="dansk" src="img/dansk.jpg" alt="vælg sproget dansk" width="33">
-    <img class="engelsk" src="img/engelsk.png" alt="vælg sproget engelsk" width="35">
-
-  <!-- Burgermenuens indhold -->
-    <div id="myLinks">
-      <a href="forside.html">Forside</a>
-      <a href="template.html">Create template</a>
-      <a href="panel.html">Control panel</a>
-    </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+      <!-- Burgermenuens indhold -->
+      <div id="myLinks">
+        <a href="forside.html">Forside</a>
+        <a href="template.html">Create template</a>
+        <a href="panel.html">Control panel</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction(menubar)">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
   </div>
 
@@ -111,7 +106,7 @@
       <input type="text" id="fname" name="fname" value="Fx. Europalle"><br><br>
 
       <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Pallefyld</button>
+        <button onclick="myFunction(dropdown)" class="dropbtn">Pallefyld</button>
           <div id="myDropdown" class="dropdown-content">
             <label for="fname">Fyldnings Højde:</label><br>
             <input type="text" id="fname" name="fname" value="John"><br><br>
