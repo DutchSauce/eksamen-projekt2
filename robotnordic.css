@@ -405,30 +405,18 @@ button{
   color: #ffffff;
   cursor: pointer;
   padding: 28px;
-  width: 100%;
+  width: 80%;
+  align-items: center;
   border: none;
+  border-radius: 10px;
   text-align: center;
   outline: none;
   font-size: 25px;
   transition: 0.4s;
   position: relative;
-  margin-top: 20%;
+  margin: 10%;
 }
 
-.accordion2 {
-  background-color: #313C40;
-  color: #ffffff;
-  cursor: pointer;
-  padding: 28px;
-  width: 100%;
-  border: none;
-  text-align: center;
-  outline: none;
-  font-size: 25px;
-  transition: 0.4s;
-  position: relative;
-  margin-top: 10%;
-}
 
 
 .accordion:after {
@@ -437,14 +425,9 @@ button{
   transform: scale(1.5);
 }
 
-.accordion2:after {
-  content: '\25be';
-  float: right;
-  transform: scale(1.5);
-}
 
 .panel {
-  padding: 18px 18px;
+  margin: 0 10% 0 10%;
   display: none;
   background-color: white;
   overflow: hidden;

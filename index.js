@@ -1,4 +1,4 @@
-console.log("Hello world!");
+console.log("JS is running");
 /*--------- Kørende baggrund ----------*/
 var bg = new Image();
 bg.src = "img/baggrund.png";
