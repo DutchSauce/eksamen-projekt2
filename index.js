@@ -32,7 +32,7 @@ window.addEventListener('load', function(event) {
 });
 
 /* ------ menu baren burger menu -------*/
-function myFunction() {
+function myfunction(menubar) {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
       x.style.display = "none";
