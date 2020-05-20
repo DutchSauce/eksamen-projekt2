@@ -16,7 +16,7 @@ for (i = 0; i < acc.length; i++) {
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
-function myFunction() {
+function myFunction(dropdown) {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
