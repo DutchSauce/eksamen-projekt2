@@ -438,6 +438,32 @@ button{
 
 }
 
+.accordion2 {
+  background-color: #2196F3;
+  color: #ffffff;
+  cursor: pointer;
+  width: 100%;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  outline: none;
+  transition: 0.4s;
+  position: relative;
+  padding: 5% 0 5% 0%;
+  margin: 3% 0 3% 0%;
+  font-size: 16px;
+}
+
+.panel2 {
+  padding: 5% 5% 5% 5%;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  position: relative;
+  font-size: 20px;
+}
+
 
 input {
   width: 80%;
@@ -458,7 +484,7 @@ input {
 
 option {
   font-size: 25px;
-  background-color:#717171;
+  background-color:#F25835;
 }
 
 .dropbtn {

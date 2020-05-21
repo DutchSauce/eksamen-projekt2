@@ -14,6 +14,22 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+var acc = document.getElementsByClassName("accordion2");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+
+
 
 /* When the user clicks on the button,
 toggle between hiding and showing the dropdown content */
@@ -35,6 +51,14 @@ function myFunction4() {
 
 function myFunction5() {
   document.getElementById("myDropdown5").classList.toggle("show");
+}
+
+function myFunction6() {
+  document.getElementById("myDropdown6").classList.toggle("show");
+}
+
+function myFunction7() {
+  document.getElementById("myDropdown7").classList.toggle("show");
 }
 
 
