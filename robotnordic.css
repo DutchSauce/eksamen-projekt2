@@ -820,8 +820,8 @@ option {
 /*ccs for infoknap*/
 /* The Modal (baggrund) */
 #myBtn {
-  width: 34px;
-  height: 34px;
+  width: 37px;
+  height: 40px;
   background: url(img/infoknap.png);
   background-repeat: no-repeat;
   border-radius: 100%;
@@ -867,20 +867,25 @@ option {
 
 .palleinfo button {
   margin-left: 75%;
-  margin-top: 7%;
+  margin-top: 8.5%;
 }
 
 #myDropdown button {
   margin-left: 80%;
-  margin-top: 8%;
+  margin-top: 10%;
 }
 #myDropdown2 button {
   margin-left: 80%;
-  margin-top: 8%;
+  margin-top: 10%;
 }
 
 .palledimensionerinfoknap button {
   margin-left: 80%;
+}
+
+.sensorinfoknap button {
+  margin-left: 80%;
+  margin-top: 19%;
 }
 
 /* slidshow*/
