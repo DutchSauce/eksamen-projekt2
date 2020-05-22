@@ -61,7 +61,9 @@ function myFunction7() {
   document.getElementById("myDropdown7").classList.toggle("show");
 }
 
-
+function myFunction8() {
+  confirm("Er du sikker på dine valg?");
+}
 
 // Close the dropdown if the user clicks outside of it
 
