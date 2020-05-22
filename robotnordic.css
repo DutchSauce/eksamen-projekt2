@@ -287,14 +287,17 @@ button{
 
 .menuknap img{
   margin-right: 30px;
+  width: 10%;
 }
 
 .menuknap1 img{
   margin-right: 25px;
+  width: 10%;
 }
 
 .menuknap2 img{
   margin-right: 18px;
+  width: 10%;
 }
 
 /*-------- budskabstekst ------*/
