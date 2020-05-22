@@ -65,6 +65,7 @@
 
         </div>
 -->
+        <!-- Pallenavn formularvalg -->
         <label for="fname">Palle Navn:</label><br>
         <input type="text" id="fname" name="fname" value="Fx. Shampoo levering"><br><br>
 
@@ -81,6 +82,7 @@
         </div>
 -->
 
+      <!-- Palletype formularvalg -->
       <label for="fname">Palle Type:</label><br>
       <select id="formularvalg" name="formularvalg">
         <option value="Europalle">Europalle</option>
@@ -89,6 +91,7 @@
       </select>
       <br><br>
 
+      <!-- Pallfyld dropdown -->
       <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Palle Fyld</button>
           <div id="myDropdown" class="dropdown-content">
@@ -101,6 +104,7 @@
           </div>
       </div>
 
+      <!-- Palledimensioner dropdown -->
       <div class="dropdown">
         <button onclick="myFunction2()" class="dropbtn">Palle Dimensioner</button>
           <div id="myDropdown2" class="dropdown-content">
@@ -113,11 +117,12 @@
           </div>
       </div>
 
+      <!-- Pakkemønster dropdown -->
       <div class="dropdown">
         <button onclick="myFunction3()" class="dropbtn">Pakke Mønster</button>
           <div id="myDropdown3" class="dropdown-content">
-
             <p> Kryds venligst kun 1 felt af <p> <br>
+            <!-- afkrydsningsfelter -->
             <label class="container">Blandet Lag
               <input type="checkbox" >
               <span class="checkmark"></span>
@@ -162,20 +167,22 @@
 
 
 
-
+<!-- Produkt accordion -->
 <button class="accordion"><img src="img/Produkticon-01.png" style="width:20%; float:left">Produkt</button>
  <div class="panel">
 
+<!-- Produktnavn formularvalg -->
   <label for="fname">Produkt Navn:</label><br>
   <input type="text" id="fname" name="fname" value="Fx. Shampoo"><br><br>
 
   <label for="fname">Antal:</label><br>
   <input type="text" id="fname" name="fname" value="Fx. 20 kolli"><br><br>
 
+<!-- Pakkedimensioner dropdown -->
   <div class="dropdown">
     <button onclick="myFunction4()" class="dropbtn">Pakke Dimensioner</button>
       <div id="myDropdown4" class="dropdown-content">
-
+        <!-- Pakke dimensioner formularvalg -->
         <label for="fname">Pakke Længde:</label><br>
         <input type="text" id="fname" name="fname" value="mm"><br><br>
         <label for="fname">Pakke Højde:</label><br>
@@ -187,20 +194,20 @@
 
   </div>
 
+  <!-- Pakke type dropdown -->
   <div class="dropdown">
     <button onclick="myFunction5()" class="dropbtn">Pakke Type</button>
       <div id="myDropdown5" class="dropdown-content">
-
+        <!-- Pakketype formularvalg med valgmuligheder -->
         <label for="fname">Vælg Pakketype</label><br>
           <select id="formularvalg" name="formularvalg">
             <option value="Kasse">Kasse</option>
             <option value="Cylinder">Cylinder</option>
           </select>
-
       </div>
-
   </div>
 
+  <!-- Tilføj flere produkter accordion (en kopi af original accordian) -->
   <button class="accordion2">Tilføj Produkt +</button>
   <div class="panel2">
 
