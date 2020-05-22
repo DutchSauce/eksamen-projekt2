@@ -252,6 +252,51 @@ button{
   border-radius: 18px;
 }
 
+.menuknap2 {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  letter-spacing: 4px;
+  background: #313c40;
+  margin-top: 10%;
+  margin-left:15%;
+  text-align: center;
+  padding: 18px 14px;
+  width: 70%;
+  color:white;
+  border-radius: 18px;
+}
+
+.menuknap a{
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+
+.menuknap1 a{
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+
+.menuknap2 a{
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+}
+
+.menuknap img{
+  margin-right: 30px;
+}
+
+.menuknap1 img{
+  margin-right: 25px;
+}
+
+.menuknap2 img{
+  margin-right: 18px;
+}
+
 /*-------- budskabstekst ------*/
 .custom-select {
   position: absolute;
