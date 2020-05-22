@@ -712,7 +712,7 @@ option {
 .se-palle{
   position: absolute;
   top: 470px;
-  left: 125px;
+  left: 135px;
   font-family: 'Raleway', sans-serif;
   border:0;
   background-color: #ffffff;
@@ -792,7 +792,7 @@ option {
 
 .pak{
   border:0;
-  background-color: #72A895;
+  background-color: #5eb5eb;
   display:block;
   margin: 20px auto;
   text-align: center;
