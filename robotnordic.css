@@ -887,6 +887,18 @@ option {
   margin-left: 80%;
   margin-top: 19%;
 }
+.pakketypeinfoknap button {
+  margin-left: 85%;
+  margin-top: 10%;
+}
+#myDropdown4 button {
+  margin-left: 80%;
+  margin-top: 10%;
+}
+.produktnaninfoknap button {
+  margin-left: 70%;
+  margin-top: 8%;
+}
 
 /* slidshow*/
 * {box-sizing: border-box}
