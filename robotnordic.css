@@ -867,8 +867,7 @@ option {
 }
 
 .palleinfo button {
-  margin-left: 75%;
-  margin-top: 8.5%;
+  float: right;
 }
 
 #myDropdown button {
