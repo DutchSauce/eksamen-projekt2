@@ -806,14 +806,19 @@ option {
 }
 
 .back-pil{
-  position: absolute;
-  top: 115px;
-  left: 27px;
+  background-image: url(img/back-pil-01-01.png); /* 16px x 16px */
+   background-color: transparent; /* make the button transparent */
+   background-repeat: no-repeat;  /* make the background image appear only once */
+   background-position: 0px 0px;  /* equivalent to 'top left' */
+   border: none;           /* assuming we don't want any borders */
+   cursor: pointer;        /* make the cursor like hovering over an <a> element */
+   width: 8%;
+   position: absolute;
+   margin: 3%;
+}
 }
 
-.back-pil img{
-  width: 35%;
-}
+
 
 /*ccs for infoknap*/
 /* The Modal (baggrund) */
