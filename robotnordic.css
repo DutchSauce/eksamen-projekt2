@@ -820,8 +820,8 @@ option {
 /*ccs for infoknap*/
 /* The Modal (baggrund) */
 #myBtn {
-  width: 37px;
-  height: 40px;
+  width: 28px;
+  height: 28px;
   background: url(img/infoknap.png);
   background-repeat: no-repeat;
   border-radius: 100%;
@@ -830,7 +830,7 @@ option {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1; /* Sit on top */
+  z-index: 2; /* Sit on top */
   padding-top: 350px; /* Location of the box */
   left: 0;
   top: 0;
