@@ -1,3 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Raleway;
+  letter-spacing: 2px;
+
+}
+
+@media screen and (min-device-width: 181px) and (max-device-width: 767px) {
+
   /* font til tekst: font-family: 'Raleway', sans-serif; */
 /* font til tal: font-family: 'Source Sans Pro', sans-serif; */
 *{
@@ -7,6 +17,8 @@
   letter-spacing: 2px;
 
 }
+
+
 
 /* --------- Baggrunds javascript -----------*/
 #canvas_container{
@@ -62,6 +74,7 @@
   color:#F25835;
 }
 
+
  /*---------Log ud ikon-------*/
 
  .log-out{
@@ -78,7 +91,7 @@
   display: block;
   position: relative;
   float:right;
-  margin-top: -69px;
+  margin-top: -62px;
   margin-right:70px;
   border-radius: 3px;
  }
@@ -87,9 +100,16 @@
   display: block;
   position: relative;
   float:right;
-  margin-top: -69px;
+  margin-top: -62px;
   margin-right:110px;
   border-radius: 3px;
+}
+
+/*---------Title-------*/
+.rn{
+  position: relative;
+  margin: 50px;
+  text-align: center;
 }
 
  /*---------- Login ---------*/
@@ -103,7 +123,7 @@
   border-radius: 10px;
 }
 
-.box h1 {
+.box h2 {
   font-family: 'Raleway', sans-serif;
   color: white;
   text-transform: uppercase;
@@ -154,7 +174,7 @@
   text-align: center;
   border: 2px solid #5eb5eb;
   padding: 5% 5% 5% 5%;
-  width: 70%;
+  width: 90%;
   outline: none;
   color: white;
   border-radius: 18px;
@@ -218,7 +238,475 @@ button{
   top: 10px;
 }
 
+}
 
+@media screen and (min-device-width: 768px) and (max-width: 1100px) {
+
+
+    /* font til tekst: font-family: 'Raleway', sans-serif; */
+  /* font til tal: font-family: 'Source Sans Pro', sans-serif; */
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    letter-spacing: 2px;
+
+  }
+
+
+
+  /* --------- Baggrunds javascript -----------*/
+  #canvas_container{
+    width: 100%;
+    height: 812px;
+    margin:0;
+    position: absolute;
+  }
+  #my_canvas{
+   display: block;
+   float: left;
+   width: 100%;
+   z-index: 1;
+  }
+
+
+  /* --------- menu baren -----------*/
+  .wrapper {
+    width: 100%;
+    margin: auto;
+    background-color: #5f5c5c;
+    position: sticky;
+  }
+
+  .sidebar {
+    overflow: hidden;
+    background-color: #5f5c5c;
+    position: relative;
+    height: 2%;
+  }
+
+  .sidebar #myLinks {
+    display: none;
+  }
+
+  .sidebar a {
+    font-family: 'Raleway', sans-serif;
+    color:#F25835;
+    padding: 23px 25px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+  }
+
+  .sidebar a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .sidebar a:hover {
+    color:#F25835;
+  }
+
+
+   /*---------Log ud ikon-------*/
+
+   .log-out{
+     width: 10%;
+     display: block;
+     position: relative;
+     margin-top: -68px;
+     margin-right: 170px;
+     left: 350px;
+   }
+
+   /*---------Menu baren flag -------*/
+  .dansk {
+    display: block;
+    position: relative;
+    float:right;
+    margin-top: -62px;
+    margin-right:90px;
+    border-radius: 3px;
+   }
+
+  .engelsk {
+    display: block;
+    position: relative;
+    float:right;
+    margin-top: -62px;
+    margin-right:130px;
+    border-radius: 3px;
+  }
+
+  /*---------Title-------*/
+  .rn{
+    position: relative;
+    font-size: 44px;
+    margin: 20px;
+    text-align: center;
+  }
+
+   /*---------- Login ---------*/
+  .box {
+    width: 60%;
+    padding: 40px;
+    position: relative;
+    margin: 20% 20% 0 20%;
+    background: #313c40;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .box h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+      /* design for brugernavn og kodeord bokse */
+  .box input[type = "text"], .box input[type = "password"]{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    border:0;
+    background:none;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #F25835;
+    padding: 5% 5% 5% 5%;
+    width: 70%;
+    outline: none;
+    color:white;
+    border-radius: 18px;
+    transition: 0.25s;
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #ffffff;
+  }
+
+  ::placeholder {
+    color: #ffffff;
+    opacity: 1; /* Firefox */
+  }
+
+
+      /* boksen udvider sig når musen fokuserer på en af boksene */
+  .box input[type = "text"]:focus, .box input[type = "password"]:focus{
+    width: 90%;
+    border-color: #5eb5eb;
+    display:flex;
+    justify-items: center;
+
+  }
+      /* design på login*/
+  .log-ind{
+    font-family: 'Raleway', sans-serif;
+    border:0;
+    background:none;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #5eb5eb;
+    padding: 5% 5% 5% 5%;
+    width: 70%;
+    outline: none;
+    color: white;
+    border-radius: 18px;
+    transition: 0.25s;
+    display: block;
+  }
+
+  .log-ind:hover {
+    background-color: #5eb5eb;
+  }
+
+  .log-ind a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .log-ind-icon{
+    width: 10%;
+    position: absolute;
+    display: inline;
+    left: 130px;
+    bottom: 70px;
+
+  }
+
+  .box a{
+    text-decoration: none;
+  }
+
+  button{
+    border-color: transparent;
+  }
+
+  .scan{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border:0;
+    background:none;
+    display:block;
+    margin: 5% 20% 0 20%;
+    text-align: center;
+    background-color: #F25835;
+    padding: 14px 40px;
+    width: 60%;
+    outline: none;
+    color: black;
+    border-radius: 18px;
+    transition: 0.25s;
+    position: absolute;
+
+  }
+
+  .scan:hover {
+    background-color: #313C40;
+    color: #FF7152;
+  }
+
+  .qr-icon{
+    width: 7%;
+    position: absolute;
+    left: 130px;
+    top: 10px;
+  }
+
+}
+
+@media screen and (min-width: 1101px) {
+
+/* --------- Baggrunds javascript -----------*/
+#canvas_container{
+  width: 100%;
+  height:812px;
+  margin:0;
+  position: absolute;
+}
+#my_canvas{
+ display: block;
+ float: left;
+ width: 100%;
+ z-index: 1;
+}
+
+
+/* --------- menu baren -----------*/
+.wrapper {
+  width: 100%;
+  margin: auto;
+  background-color: #5f5c5c;
+  position: sticky;
+}
+
+.sidebar {
+  overflow: hidden;
+  background-color: #5f5c5c;
+  position: relative;
+  height: 2%;
+}
+
+.sidebar #myLinks {
+  display: none;
+}
+
+.sidebar a {
+  font-family: 'Raleway', sans-serif;
+  color:#F25835;
+  padding: 23px 25px;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+}
+
+.sidebar a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.sidebar a:hover {
+  color:#F25835;
+}
+
+
+ /*---------Log ud ikon-------*/
+
+ .log-out{
+   width: 10%;
+   display: block;
+   position: relative;
+   margin-top: -68px;
+   margin-right: 170px;
+   left: 990px;
+ }
+
+ /*---------Menu baren flag -------*/
+.dansk {
+  display: block;
+  position: relative;
+  float:right;
+  margin-top: -62px;
+  margin-right:70px;
+  border-radius: 3px;
+ }
+
+.engelsk {
+  display: block;
+  position: relative;
+  float:right;
+  margin-top: -62px;
+  margin-right:110px;
+  border-radius: 3px;
+}
+
+/*---------Title-------*/
+.rn{
+  position: relative;
+  margin: 50px;
+  text-align: center;
+}
+
+ /*---------- Login ---------*/
+.box {
+  width: 60%;
+  padding: 40px;
+  position: relative;
+  margin: 10% 20% 0 20%;
+  background: #313c40;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.box h2 {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+
+    /* design for brugernavn og kodeord bokse */
+.box input[type = "text"], .box input[type = "password"]{
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  border:0;
+  background:none;
+  display:block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #F25835;
+  padding: 5% 5% 5% 5%;
+  width: 70%;
+  outline: none;
+  color:white;
+  border-radius: 18px;
+  transition: 0.25s;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+}
+
+
+    /* boksen udvider sig når musen fokuserer på en af boksene */
+.box input[type = "text"]:focus, .box input[type = "password"]:focus{
+  width: 90%;
+  border-color: #5eb5eb;
+  display:flex;
+  justify-items: center;
+
+}
+    /* design på login*/
+.log-ind{
+  font-family: 'Raleway', sans-serif;
+  border:0;
+  background:none;
+  display:block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #5eb5eb;
+  padding: 5% 5% 5% 5%;
+  width: 70%;
+  outline: none;
+  color: white;
+  border-radius: 18px;
+  transition: 0.25s;
+  display: block;
+}
+
+.log-ind:hover {
+  background-color: #5eb5eb;
+}
+
+.log-ind a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.log-ind-icon{
+  width: 8%;
+  position: absolute;
+  top: 320px;
+  left: 190px;
+
+
+}
+
+.box a{
+  text-decoration: none;
+  font-size: 26px;
+}
+
+button{
+  border-color: transparent;
+}
+
+.scan{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  border:0;
+  background:none;
+  display:block;
+  margin: 5% 20% 0 20%;
+  text-align: center;
+  background-color: #F25835;
+  padding: 14px 40px;
+  width: 60%;
+  outline: none;
+  color: black;
+  border-radius: 18px;
+  transition: 0.25s;
+  position: absolute;
+
+}
+
+.scan:hover {
+  background-color: #313C40;
+  color: #FF7152;
+}
+
+.qr-icon{
+  width: 5%;
+  position: absolute;
+  left: 310px;
+  top: 10px;
+}
+
+}
+
+@media screen and (min-device-width: 181px) and (max-device-width: 767px) {
 /*---------- forside.html ---------*/
 
 /*-----------knapper---------*/
@@ -400,6 +888,382 @@ button{
   border-radius: 0px 0px 18px 18px;
 }
 
+}
+
+@media screen and (min-device-width: 768px) and (max-width: 1100px) {
+
+  /*---------- forside.html ---------*/
+
+  /*-----------knapper---------*/
+
+  .menuknap {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: #313c40;
+    margin-top: 2%;
+    margin-left:15%;
+    text-align: center;
+    padding: 18px 14px;
+    width: 70%;
+    color:white;
+    border-radius: 18px;
+  }
+  .menuknap1 {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: #313c40;
+    margin-top: 10%;
+    margin-left:15%;
+    text-align: center;
+    padding: 18px 14px;
+    width: 70%;
+    color:white;
+    border-radius: 18px;
+  }
+
+  .menuknap2 {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: #313c40;
+    margin-top: 10%;
+    margin-left:15%;
+    text-align: center;
+    padding: 18px 14px;
+    width: 70%;
+    color:white;
+    border-radius: 18px;
+  }
+
+  .menuknap a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+
+  .menuknap1 a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+
+  .menuknap2 a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+
+  .menuknap img{
+    margin-right: 30px;
+    width: 8%;
+  }
+
+  .menuknap1 img{
+    margin-right: 25px;
+    width: 8%;
+  }
+
+  .menuknap2 img{
+    margin-right: 18px;
+    width: 8%;
+  }
+
+  /*-------- budskabstekst ------*/
+  .custom-select {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20%;
+    margin-left: 5%;
+    padding: 18px 14px;
+    width: 90%;
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+
+    /* gemmer select sectionen, så det kommer frem når man dropper down*/
+    .custom-select select {
+      display: none;
+    }
+
+    .select-selected {
+      background-color: #313c40;
+      border-radius: 18px;
+    }
+
+    /* design af pil ned */
+    .select-selected:after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: 30px;
+      width: 2px;
+      height: 10px;
+      border: 6px solid transparent;
+      border-color: #fff transparent transparent transparent;
+    }
+
+    /*gør at pilen vender op ad når select sectionen er nede*/
+    .select-selected.select-arrow-active:after {
+      border-color: transparent transparent #fff transparent;
+      top: 30%;
+    }
+
+    /*design teksten i select*/
+    .select-items div, .select-selected {
+      color: #ffffff;
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+      cursor: pointer;
+      user-select: none;
+      font-family: 'Raleway', sans-serif;
+      padding: 20px;
+    }
+
+    /* Design for dropdown boksen*/
+    .select-items {
+      position: absolute;
+      background-color: #313c40;
+      opacity: 0.8;
+      top: 80%;
+      margin-left: 1%;
+      width: 91%;
+      border-radius: 0px 0px 18px 18px;
+    }
+
+    /*hide the items when the select box is closed:*/
+    .select-hide {
+      display: none;
+    }
+
+  /*---------- Budskabstekst -------- */
+
+  .overskriftforside {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 4px;
+    font-size: 29px;
+    background-color:#313c40;
+    opacity:0.8;
+    padding: 18px 18px;
+    color: white;
+    margin-top: 15%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 18px 18px 0px 0px;
+  }
+
+  .budskabstekst {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    background-color:#313c40;
+    opacity: 0.8;
+    padding: 18px 18px;
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 0px 0px 18px 18px;
+  }
+
+}
+
+@media screen and (min-width: 1101px) {
+
+  /*---------- forside.html ---------*/
+
+  /*-----------knapper---------*/
+
+  .menuknap {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: #313c40;
+    margin-top: 2%;
+    margin-left:10%;
+    text-align: center;
+    padding: 18px 14px;
+    width: 20%;
+    color:white;
+    border-radius: 18px;
+  }
+  .menuknap1 {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: #313c40;
+    margin-top: 2%;
+    margin-left:70%;
+    text-align: center;
+    padding: 18px 14px;
+    width: 20%;
+    color:white;
+    border-radius: 18px;
+  }
+
+  .menuknap2 {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: #313c40;
+    margin-top: 2%;
+    margin-left:40%;
+    text-align: center;
+    padding: 18px 14px;
+    width: 20%;
+    color:white;
+    border-radius: 18px;
+  }
+
+  .menuknap a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+
+  .menuknap1 a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+
+  .menuknap2 a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+
+  .menuknap img{
+    margin-right: 30px;
+    width: 8%;
+  }
+
+  .menuknap1 img{
+    margin-right: 25px;
+    width: 8%;
+  }
+
+  .menuknap2 img{
+    margin-right: 18px;
+    width: 8%;
+  }
+
+  /*-------- budskabstekst ------*/
+  .custom-select {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20%;
+    margin-left: 5%;
+    padding: 18px 14px;
+    width: 90%;
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+
+    /* gemmer select sectionen, så det kommer frem når man dropper down*/
+    .custom-select select {
+      display: none;
+    }
+
+    .select-selected {
+      background-color: #313c40;
+      border-radius: 18px;
+    }
+
+    /* design af pil ned */
+    .select-selected:after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: 30px;
+      width: 2px;
+      height: 10px;
+      border: 6px solid transparent;
+      border-color: #fff transparent transparent transparent;
+    }
+
+    /*gør at pilen vender op ad når select sectionen er nede*/
+    .select-selected.select-arrow-active:after {
+      border-color: transparent transparent #fff transparent;
+      top: 30%;
+    }
+
+    /*design teksten i select*/
+    .select-items div, .select-selected {
+      color: #ffffff;
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+      cursor: pointer;
+      user-select: none;
+      font-family: 'Raleway', sans-serif;
+      padding: 20px;
+    }
+
+    /* Design for dropdown boksen*/
+    .select-items {
+      position: absolute;
+      background-color: #313c40;
+      opacity: 0.8;
+      top: 80%;
+      margin-left: 1%;
+      width: 91%;
+      border-radius: 0px 0px 18px 18px;
+    }
+
+    /*hide the items when the select box is closed:*/
+    .select-hide {
+      display: none;
+    }
+
+  /*---------- Budskabstekst -------- */
+
+  .overskriftforside {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 4px;
+    font-size: 29px;
+    background-color:#313c40;
+    opacity:0.8;
+    padding: 18px 18px;
+    color: white;
+    margin-top: 15%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 18px 18px 0px 0px;
+  }
+
+  .budskabstekst {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    background-color:#313c40;
+    opacity: 0.8;
+    padding: 18px 18px;
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 0px 0px 18px 18px;
+  }
+
+  }
+
+}
+
+
+/*------Template.html----------*/
 
 /*------.accordian------*/
 
@@ -999,4 +1863,8 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+@@media query {
+
 }
