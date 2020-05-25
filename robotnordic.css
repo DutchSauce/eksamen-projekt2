@@ -417,7 +417,7 @@ button{
   font-size: 25px;
   transition: 0.4s;
   position: relative;
-  margin: 10% 10% 0 10%;
+  margin: 15% 10% 0 10%;
 }
 
 .accordion:after {
@@ -815,6 +815,8 @@ option {
    width: 8%;
    position: absolute;
    margin: 3%;
+   margin-left: 1%;
+   opacity: 60%;
 }
 
 
