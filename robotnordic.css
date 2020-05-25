@@ -717,8 +717,7 @@ option {
   font-family: 'Raleway', sans-serif;
   border:0;
   background-color: #ffffff;
-  display:block;
-  margin: 20px auto;
+  margin: auto;
   text-align: center;
   border: 2px solid #FF7152;
   padding: 14px;
@@ -726,7 +725,6 @@ option {
   outline: none;
   border-radius: 18px;
   transition: 0.25s;
-  display: block;
 }
 
 .kontrol{
@@ -755,11 +753,10 @@ option {
 
 .print, .gem, .plan{
   border:0;
-  background-color: #ffffff;
+  background-color: #313C40;
   display:block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid #FF7152;
   padding: 24px;
   width: 80%;
   outline: none;
@@ -770,7 +767,7 @@ option {
 
 .flex-knapper-pl a{
   text-decoration: none;
-  color: #ff7152;
+  color: #ffffff;
   display: block;
   letter-spacing: 2px;
 }
