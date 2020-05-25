@@ -499,6 +499,7 @@ option {
   cursor: pointer;
   width: 100%;
   border-radius: 10px;
+  z-index: 99;
 
 }
 
@@ -517,7 +518,6 @@ option {
   background-color: #ffffff;
   min-width: 160px;
   overflow: auto;
-  z-index: 1;
   padding: 10% 0 10% 0;
 }
 
@@ -601,7 +601,6 @@ option {
 }
 
 .Nulstil {
-  z-index: 2;
   position: relative;
   display: block;
   background-color: #F25835;
@@ -616,7 +615,6 @@ option {
 }
 
 .GemPalle {
-  z-index: 2;
   position: relative;
   display: block;
   background-color: white;
@@ -631,7 +629,6 @@ option {
 }
 
 .Videre {
-  z-index: 2;
   position: relative;
   display: block;
   background-color: #5eb5eb;
@@ -855,6 +852,7 @@ option {
   padding: 20px;
   border: 1px solid #888;
   width: 95%;
+  z-index: 99;
 }
 
 /* The Close Button */
@@ -876,35 +874,6 @@ option {
   float: right;
 }
 
-#myDropdown button {
-  margin-left: 80%;
-  margin-top: 10%;
-}
-#myDropdown2 button {
-  margin-left: 80%;
-  margin-top: 10%;
-}
-
-.palledimensionerinfoknap button {
-  margin-left: 80%;
-}
-
-.sensorinfoknap button {
-  margin-left: 80%;
-  margin-top: 19%;
-}
-.pakketypeinfoknap button {
-  margin-left: 85%;
-  margin-top: 10%;
-}
-#myDropdown4 button {
-  margin-left: 80%;
-  margin-top: 10%;
-}
-.produktnaninfoknap button {
-  margin-left: 70%;
-  margin-top: 8%;
-}
 
 /* slidshow*/
 * {box-sizing: border-box}
