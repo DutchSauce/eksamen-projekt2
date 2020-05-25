@@ -729,22 +729,6 @@ option {
   display: block;
 }
 
-.se-palle:hover{
-  background-color: #ff7152;
-  color: #ffffff;
-}
-
-.se-palle a{
-  text-decoration: none;
-  color: #ff7152;
-  letter-spacing: 2px;
-  display: block;
-}
-
-.se-palle a:hover{
-  color: #ffffff;
-}
-
 .kontrol{
   top: 620px;
   left: 105px;
