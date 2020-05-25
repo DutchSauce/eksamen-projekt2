@@ -825,12 +825,6 @@ option {
   border-radius: 100%;
 }
 
-.Pallenavntemp {
-  position: relative;
-  display: inline;
-  float: right;
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -859,7 +853,7 @@ option {
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -868,10 +862,6 @@ option {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
-
-.palleinfo button {
-  float: right;
 }
 
 
