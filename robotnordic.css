@@ -477,7 +477,7 @@ input {
 }
 
 #formularvalg {
-  width: 85%;
+  width: 80%;
   height: 30px;
   border-radius: 5px;
   border: 1px solid #717171;
@@ -561,12 +561,13 @@ option {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #F25835;
+  background-color: #white;
+  border: solid 1.5px #313C40;
 }
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  background-color: #F25835;
+  background-color: #white;
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -820,8 +821,8 @@ option {
 /*ccs for infoknap*/
 /* The Modal (baggrund) */
 #myBtn {
-  width: 37px;
-  height: 40px;
+  width: 28px;
+  height: 28px;
   background: url(img/infoknap.png);
   background-repeat: no-repeat;
   border-radius: 100%;
@@ -830,7 +831,7 @@ option {
 .modal {
   display: none;
   position: fixed;
-  z-index: 1; /* Sit on top */
+  z-index: 2; /* Sit on top */
   padding-top: 350px; /* Location of the box */
   left: 0;
   top: 0;
