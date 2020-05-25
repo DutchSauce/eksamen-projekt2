@@ -420,12 +420,10 @@ button{
   margin: 15% 10% 0 10%;
 }
 
-.accordion:after {
-  content: '\25be';
+.accordion::after {
   float: right;
   transform: scale(1.5);
 }
-
 
 .panel {
   margin: 0 10% 0 10%;
