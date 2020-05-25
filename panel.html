@@ -43,9 +43,11 @@
       </a>
     </div>
   </div>
-<div class="back-pil">
-  <a href="forside.html"><img title="Gå tilbage til forsiden" src="img/back-pil.png" alt="En tilbage vej til forsiden"></a>
-</div>
+
+
+
+  <input type="button"  onclick="window.history.back()" class="back-pil">
+
 
   <h1 class="h1-text">Oversigt</h1>
   <hr class="top-line">
@@ -66,17 +68,27 @@
 
   <h2 class="visning">Visning af pallen</h2>
   <hr class="midt-line">
-  <div class="se-palle"><a href="#">Se Palle</a></div>
+  <!-- infoknap -->
+    <button class="se-palle" href="#myModal23"> Se palle </button>
+    <div id="myModal23" class="modal">
+      <!-- popup content-->
+        <div class="infoknap-content">
+          <span class="close">&times;</span>
+          <h2> Visionlisering af din palle <h2>
+          <img class="infografi" src="img/topplacering-01.png" width="100%" height="auto">
+        </div>
+    </div>
+  <!--<div class="se-palle"><a href="#">Se Palle</a></div> -->
 
 <h2 class="kontrol">Kontrol Panel</h2>
 <hr class="bottom-line">
 <div class="flex-knapper-pl">
-<div class="print"><a href="#">Print Label</a></div>
-<div class="gem"><a href="#">Gem Skabelon</a></div>
-<div class="plan"><a href="#">Tilføj til planlægning</a></div>
-<div class="pak"><a href="#" style="
-    color: #ffffff;">Begynd Pakning</a></div>
+  <div class="print"><a href="#">Print Label</a></div>
+  <div class="gem"><a href="#">Gem Skabelon</a></div>
+  <div class="plan"><a href="#">Tilføj til planlægning</a></div>
+  <div class="pak"><a href="#" style="color: #ffffff;">Begynd Pakning</a></div>
 </div>
+
 </body>
 
 </html>

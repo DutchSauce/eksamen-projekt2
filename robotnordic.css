@@ -1281,15 +1281,13 @@ button{
   font-size: 25px;
   transition: 0.4s;
   position: relative;
-  margin: 10% 10% 0 10%;
+  margin: 15% 10% 0 10%;
 }
 
-.accordion:after {
-  content: '\25be';
+.accordion::after {
   float: right;
   transform: scale(1.5);
 }
-
 
 .panel {
   margin: 0 10% 0 10%;
@@ -1363,6 +1361,7 @@ option {
   cursor: pointer;
   width: 100%;
   border-radius: 10px;
+  z-index: 99;
 
 }
 
@@ -1381,7 +1380,6 @@ option {
   background-color: #ffffff;
   min-width: 160px;
   overflow: auto;
-  z-index: 1;
   padding: 10% 0 10% 0;
 }
 
@@ -1465,7 +1463,6 @@ option {
 }
 
 .Nulstil {
-  z-index: 2;
   position: relative;
   display: block;
   background-color: #F25835;
@@ -1480,7 +1477,6 @@ option {
 }
 
 .GemPalle {
-  z-index: 2;
   position: relative;
   display: block;
   background-color: white;
@@ -1495,7 +1491,6 @@ option {
 }
 
 .Videre {
-  z-index: 2;
   position: relative;
   display: block;
   background-color: #5eb5eb;
@@ -1584,8 +1579,7 @@ option {
   font-family: 'Raleway', sans-serif;
   border:0;
   background-color: #ffffff;
-  display:block;
-  margin: 20px auto;
+  margin: auto;
   text-align: center;
   border: 2px solid #FF7152;
   padding: 14px;
@@ -1593,23 +1587,6 @@ option {
   outline: none;
   border-radius: 18px;
   transition: 0.25s;
-  display: block;
-}
-
-.se-palle:hover{
-  background-color: #ff7152;
-  color: #ffffff;
-}
-
-.se-palle a{
-  text-decoration: none;
-  color: #ff7152;
-  letter-spacing: 2px;
-  display: block;
-}
-
-.se-palle a:hover{
-  color: #ffffff;
 }
 
 .kontrol{
@@ -1638,11 +1615,10 @@ option {
 
 .print, .gem, .plan{
   border:0;
-  background-color: #ffffff;
+  background-color: #313C40;
   display:block;
   margin: 20px auto;
   text-align: center;
-  border: 2px solid #FF7152;
   padding: 24px;
   width: 80%;
   outline: none;
@@ -1653,7 +1629,7 @@ option {
 
 .flex-knapper-pl a{
   text-decoration: none;
-  color: #ff7152;
+  color: #ffffff;
   display: block;
   letter-spacing: 2px;
 }
@@ -1673,25 +1649,31 @@ option {
 }
 
 .back-pil{
-  position: absolute;
-  top: 115px;
-  left: 27px;
+  background-image: url(img/back-pil-01-01.png); /* 16px x 16px */
+   background-color: transparent; /* make the button transparent */
+   background-repeat: no-repeat;  /* make the background image appear only once */
+   background-position: 0px 0px;  /* equivalent to 'top left' */
+   border: none;           /* assuming we don't want any borders */
+   cursor: pointer;        /* make the cursor like hovering over an <a> element */
+   width: 8%;
+   position: absolute;
+   margin: 3%;
+   margin-left: 1%;
+   opacity: 60%;
 }
 
-.back-pil img{
-  width: 35%;
-}
+
 
 /*ccs for infoknap*/
 /* The Modal (baggrund) */
-#myBtn {
+.modal-button {
   width: 28px;
   height: 28px;
   background: url(img/infoknap.png);
   background-repeat: no-repeat;
   border-radius: 100%;
-  position: absolute;
 }
+
 .modal {
   display: none;
   position: fixed;
@@ -1712,14 +1694,15 @@ option {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 95%;
+  z-index: 99;
 }
 
 /* The Close Button */
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
 }
 
@@ -1730,40 +1713,6 @@ option {
   cursor: pointer;
 }
 
-.palleinfo button {
-  margin-left: 75%;
-  margin-top: 8.5%;
-}
-
-#myDropdown button {
-  margin-left: 80%;
-  margin-top: 10%;
-}
-#myDropdown2 button {
-  margin-left: 80%;
-  margin-top: 10%;
-}
-
-.palledimensionerinfoknap button {
-  margin-left: 80%;
-}
-
-.sensorinfoknap button {
-  margin-left: 80%;
-  margin-top: 19%;
-}
-.pakketypeinfoknap button {
-  margin-left: 85%;
-  margin-top: 10%;
-}
-#myDropdown4 button {
-  margin-left: 80%;
-  margin-top: 10%;
-}
-.produktnaninfoknap button {
-  margin-left: 70%;
-  margin-top: 8%;
-}
 
 /* slidshow*/
 * {box-sizing: border-box}

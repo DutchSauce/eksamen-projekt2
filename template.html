@@ -46,22 +46,24 @@
     </div>
   </div>
 
+  <input type="button"  onclick="window.history.back()" class="back-pil">
+
 
 <!-- Palle accordion -->
 <button class="accordion"><img src="img/Palleicon-01.png" style="width:20%; float:left">Palle</button>
  <div class="panel">
-   <div class="palleinfo">
+
 
 
       <!-- infoknap -->
-        <button id="myBtn"></button>
-        <div id="myModal" class="modal">
+        <button class="modal-button" href="#myModal1"></button>
+
+        <div id="myModal1" class="modal">
 
           <!-- popup content-->
             <div class="infoknap-content">
               <span class="close">&times;</span>
               <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-              <img class="infografi" src="img/infoknap.png">
             </div>
 
         </div>
@@ -69,18 +71,17 @@
         <label for="fname">Palle Navn:</label><br>
         <input type="text" id="fname" name="fname" value="Fx. Shampoo levering"><br><br>
 
-      <!-- infoknap -->
-        <button id="myBtn"></button>
-        <div id="myModal" class="modal">
+        <!-- infoknap -->
+          <button class="modal-button" href="#myModal2"></button>
+          <div id="myModal2" class="modal">
+            <!-- popup content-->
+              <div class="infoknap-content">
+                <span class="close">&times;</span>
+                <p> Skriv eller vælg den palle type du vil have maskinen til at pakke.</p>
+                <img class="infografi" src="img/instruk-del1.jpg" width="100%" height="auto">
+              </div>
+          </div>
 
-          <!-- popup content -->
-            <div class="infoknap-content">
-              <span class="close">&times;</span>
-              <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-              <img class="infografi" src="img/infoknap.png">
-            </div>
-        </div>
-    </div>
       <!-- Palletype formularvalg -->
       <label for="fname">Palle Type:</label><br>
       <select id="formularvalg" name="formularvalg">
@@ -96,14 +97,13 @@
           <div id="myDropdown" class="dropdown-content">
 
             <!-- infoknap -->
-              <button id="myBtn"></button>
-              <div id="myModal" class="modal">
-
-                <!-- popup content -->
+              <button class="modal-button" href="#myModal3"></button>
+              <div id="myModal3" class="modal">
+                <!-- popup content-->
                   <div class="infoknap-content">
                     <span class="close">&times;</span>
-                    <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                    <img class="infografi" src="img/infoknap.png">
+                    <p> Dette er den samlet palles højde med alle pakkerne på.</p>
+                    <img class="infografi" src="img/fyldningshoejde-01.png" width="100%" height="auto">
                   </div>
               </div>
 
@@ -111,31 +111,31 @@
             <input type="text" id="fname" name="fname" value="mm"><br><br>
 
             <!-- infoknap -->
-              <button id="myBtn"></button>
-              <div id="myModal" class="modal">
-
-                <!-- popup content -->
+              <button class="modal-button" href="#myModal4"></button>
+              <div id="myModal4" class="modal">
+                <!-- popup content-->
                   <div class="infoknap-content">
                     <span class="close">&times;</span>
-                    <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                    <img class="infografi" src="img/infoknap.png">
+                    <p> Fyldningen skal som standart fylde 70% af den samlet palles højde, for at den kan blive godkendt til at pakke og videresende.</p>
+                    <img class="infografi" src="img/fyldningsprocent-01.png" width="100%" height="auto">
                   </div>
               </div>
+
 
             <label for="fname">Fyldnings Procent:</label><br>
             <input type="text" id="fname" name="fname" value="%"><br><br>
 
             <!-- infoknap -->
-              <button id="myBtn"></button>
-              <div id="myModal" class="modal">
-
-                <!-- popup content -->
+              <button class="modal-button" href="#myModal5"></button>
+              <div id="myModal5" class="modal">
+                <!-- popup content-->
                   <div class="infoknap-content">
                     <span class="close">&times;</span>
-                    <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                    <img class="infografi" src="img/infoknap.png">
+                    <p> Tilladt udhæng betyder, at det er tilladt pallens fyld må overskride pallen på siderne.</p>
+                    <img class="infografi" src="img/tilladtudhaeng-01.png" width="100%" height="auto">
                   </div>
               </div>
+
 
             <label for="fname">Tilladt Udhæng:</label><br>
             <input type="text" id="fname" name="fname" value="mm"><br>
@@ -148,14 +148,13 @@
           <div id="myDropdown2" class="dropdown-content">
 
             <!-- infoknap -->
-              <button id="myBtn"></button>
-              <div id="myModal" class="modal">
-
-                <!-- popup content -->
+              <button class="modal-button" href="#myModal6"></button>
+              <div id="myModal6" class="modal">
+                <!-- popup content-->
                   <div class="infoknap-content">
                     <span class="close">&times;</span>
-                    <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                    <img class="infografi" src="img/infoknap.png">
+                    <p> Dette ændre sig efter hvilket palle type du har valg. Det er selve pallens højde.</p>
+                    <img class="infografi" src="img/palledimension-01.png" width="100%" height="auto">
                   </div>
               </div>
 
@@ -163,14 +162,13 @@
             <input type="text" id="fname" name="fname" value="mm"><br><br>
 
             <!-- infoknap -->
-              <button id="myBtn"></button>
-              <div id="myModal" class="modal">
-
-                <!-- popup content -->
+              <button class="modal-button" href="#myModal7"></button>
+              <div id="myModal7" class="modal">
+                <!-- popup content-->
                   <div class="infoknap-content">
                     <span class="close">&times;</span>
-                    <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                    <img class="infografi" src="img/infoknap.png">
+                    <p> Dette ændre sig efter hvilket palle type du har valg. Det er selve pallens bedre.</p>
+                    <img class="infografi" src="img/palledimension-01.png" width="100%" height="auto">
                   </div>
               </div>
 
@@ -178,14 +176,13 @@
             <input type="text" id="fname" name="fname" value="mm"><br><br>
 
             <!-- infoknap -->
-              <button id="myBtn"></button>
-              <div id="myModal" class="modal">
-
-                <!-- popup content -->
+              <button class="modal-button" href="#myModal8"></button>
+              <div id="myModal8" class="modal">
+                <!-- popup content-->
                   <div class="infoknap-content">
                     <span class="close">&times;</span>
-                    <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                    <img class="infografi" src="img/infoknap.png">
+                    <p> Dette ændre sig efter hvilket palle type du har valg. Det er selve pallens længde.</p>
+                    <img class="infografi" src="img/palledimension-01.png" width="100%" height="auto">
                   </div>
               </div>
 
@@ -198,19 +195,17 @@
       <div class="dropdown">
         <button onclick="myFunction3()" class="dropbtn">Pakke Mønster</button>
           <div id="myDropdown3" class="dropdown-content">
-            <div class="palledimensionerinfoknap"
             <p> Kryds venligst kun 1 felt af <p> <br>
             <!-- afkrydsningsfelter -->
 
             <!-- infoknap -->
-              <button id="myBtn"></button>
-              <div id="myModal" class="modal">
-
-                <!-- popup content -->
+              <button class="modal-button" href="#myModal9"></button>
+              <div id="myModal9" class="modal">
+                <!-- popup content-->
                   <div class="infoknap-content">
                     <span class="close">&times;</span>
-                    <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                    <img class="infografi" src="img/infoknap.png">
+                    <p> Blandede lag betyder at hvert lag må blive blandet med forskellige pakker.</p>
+                    <img class="infografi" src="img/blandetlag-01.png" width="100%" height="auto">
                   </div>
               </div>
 
@@ -220,14 +215,13 @@
             </label>
 
             <!-- infoknap -->
-              <button id="myBtn"></button>
-              <div id="myModal" class="modal">
-
-                <!-- popup content -->
+              <button class="modal-button" href="#myModal10"></button>
+              <div id="myModal10" class="modal">
+                <!-- popup content-->
                   <div class="infoknap-content">
                     <span class="close">&times;</span>
-                    <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                    <img class="infografi" src="img/infoknap.png">
+                    <p> Spred pakker betyder at der skal være mellemrum mellem alle pakker på pallen.</p>
+                    <img class="infografi" src="img/spredpakker-01.png" width="100%" height="auto">
                   </div>
               </div>
 
@@ -237,14 +231,13 @@
             </label>
 
             <!-- infoknap -->
-              <button id="myBtn"></button>
-              <div id="myModal" class="modal">
-
-                <!-- popup content -->
+              <button class="modal-button" href="#myModal11"></button>
+              <div id="myModal11" class="modal">
+                <!-- popup content-->
                   <div class="infoknap-content">
                     <span class="close">&times;</span>
-                    <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                    <img class="infografi" src="img/infoknap.png">
+                    <p> Centret vægt betyder at vægten på pakkerne bliver placeret midt på pallen, så den bliver mere stabil.</p>
+                    <img class="infografi" src="img/kunfuldlag-01.png" width="100%" height="auto">
                   </div>
               </div>
 
@@ -254,14 +247,13 @@
             </label>
 
             <!-- infoknap -->
-              <button id="myBtn"></button>
-              <div id="myModal" class="modal">
-
-                <!-- popup content -->
+              <button class="modal-button" href="#myModal12"></button>
+              <div id="myModal12" class="modal">
+                <!-- popup content-->
                   <div class="infoknap-content">
                     <span class="close">&times;</span>
-                    <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                    <img class="infografi" src="img/infoknap.png">
+                    <p> Sæt pakker ved kant, indebærer at pakker bliver placeret ved pallens kant.</p>
+                    <img class="infografi" src="img/centerload-01.png" width="100%" height="auto">
                   </div>
               </div>
 
@@ -271,14 +263,13 @@
             </label>
 
             <!-- infoknap -->
-              <button id="myBtn"></button>
-              <div id="myModal" class="modal">
-
-                <!-- popup content -->
+              <button class="modal-button" href="#myModal13"></button>
+              <div id="myModal13" class="modal">
+                <!-- popup content-->
                   <div class="infoknap-content">
                     <span class="close">&times;</span>
-                    <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                    <img class="infografi" src="img/infoknap.png">
+                    <p>Ved kun fulde lag skal det forstås at maskinen kun vil pakke lag der fylder hele pallens areal.</p>
+                    <img class="infografi" src="img/bindlag-01.png" width="100%" height="auto">
                   </div>
               </div>
 
@@ -288,14 +279,13 @@
             </label>
 
             <!-- infoknap -->
-              <button id="myBtn"></button>
-              <div id="myModal" class="modal">
-
-                <!-- popup content -->
+              <button class="modal-button" href="#myModal14"></button>
+              <div id="myModal14" class="modal">
+                <!-- popup content-->
                   <div class="infoknap-content">
                     <span class="close">&times;</span>
-                    <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                    <img class="infografi" src="img/infoknap.png">
+                    <p> Bind lag betyder at pakker kommer til at overlappe hinanden fra lag til lag.</p>
+                    <img class="infografi" src="img/Pakkervedkant-01.png" width="100%" height="auto">
                   </div>
               </div>
 
@@ -303,44 +293,40 @@
               <input type="checkbox" >
               <span class="checkmark"></span>
             </label><br>
-          </div>
             <hr class="afstanspakkemoenster"><br>
-            <div class="sensorinfoknap">
 
-            <!-- infoknap -->
-              <button id="myBtn"></button>
-              <div id="myModal" class="modal">
-
-                <!-- popup content -->
-                  <div class="infoknap-content">
-                    <span class="close">&times;</span>
-                    <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                    <img class="infografi" src="img/infoknap.png">
-                  </div>
-              </div>
+              <!-- infoknap -->
+                <button class="modal-button" href="#myModal15"></button>
+                <div id="myModal15" class="modal">
+                  <!-- popup content-->
+                    <div class="infoknap-content">
+                      <span class="close">&times;</span>
+                      <p> Sensor maks positiv størrelse, her er der tale en sensor der kan fravælge pakker, der ikke lever op til den angivet max størrelse.</p>
+                      <img class="infografi" src="img/sensormaks-01.png" width="100%" height="auto">
+                    </div>
+                </div>
 
             <label for="fname">Sensor Maks. Positiv Margin:</label><br>
             <input type="text" id="fname" name="fname" value="mm"><br><br>
 
             <!-- infoknap -->
-              <button id="myBtn"></button>
-              <div id="myModal" class="modal">
-
-                <!-- popup content -->
+              <button class="modal-button" href="#myModal16"></button>
+              <div id="myModal16" class="modal">
+                <!-- popup content-->
                   <div class="infoknap-content">
                     <span class="close">&times;</span>
-                    <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                    <img class="infografi" src="img/infoknap.png">
+                    <p> Sensor min positiv størrelse, her er der tale en sensor der kan fravælge pakker, der ikke lever op til den angivet minimum størrelse.</p>
+                    <img class="infografi" src="img/sensormin-01.png" width="100%" height="auto">
                   </div>
-                </div>
               </div>
+
 
             <label for="fname">Sensor Min. Negativ Margin:</label><br>
             <input type="text" id="fname" name="fname" value="mm"><br>
 
           </div>
       </div>
- </div>
+</div>
 
 
 
@@ -348,52 +334,46 @@
 <!-- Produkt accordion -->
 <button class="accordion"><img src="img/Produkticon-01.png" style="width:20%; float:left">Produkt</button>
  <div class="panel">
-  <div class="produktnaninfoknap">
-   <!-- infoknap -->
-     <button id="myBtn"></button>
-     <div id="myModal" class="modal">
-
-       <!-- popup content -->
-         <div class="infoknap-content">
-           <span class="close">&times;</span>
-           <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-           <img class="infografi" src="img/infoknap.png">
-         </div>
-     </div>
+    <!-- infoknap -->
+      <button class="modal-button" href="#myModal17"></button>
+      <div id="myModal17" class="modal">
+        <!-- popup content-->
+          <div class="infoknap-content">
+            <span class="close">&times;</span>
+            <p> Her skal du navngive din pakke/produkt.</p>
+          </div>
+      </div>
 
 <!-- Produktnavn formularvalg -->
   <label for="fname">Produkt Navn:</label><br>
   <input type="text" id="fname" name="fname" value="Fx. Shampoo"><br><br>
 
   <!-- infoknap -->
-    <button id="myBtn"></button>
-    <div id="myModal" class="modal">
-
-      <!-- popup content -->
+    <button class="modal-button" href="#myModal18"></button>
+    <div id="myModal18" class="modal">
+      <!-- popup content-->
         <div class="infoknap-content">
           <span class="close">&times;</span>
-          <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-          <img class="infografi" src="img/infoknap.png">
+          <p> Her angiver du hvor mange af det angivet produkt der bliver producere.</p>
         </div>
     </div>
 
   <label for="fname">Antal:</label><br>
   <input type="text" id="fname" name="fname" value="Fx. 20 kolli"><br><br>
-  </div>
+
 <!-- Pakkedimensioner dropdown -->
   <div class="dropdown">
     <button onclick="myFunction4()" class="dropbtn">Pakke Dimensioner</button>
       <div id="myDropdown4" class="dropdown-content">
 
         <!-- infoknap -->
-          <button id="myBtn"></button>
-          <div id="myModal" class="modal">
-
-            <!-- popup content -->
+          <button class="modal-button" href="#myModal19"></button>
+          <div id="myModal19" class="modal">
+            <!-- popup content-->
               <div class="infoknap-content">
                 <span class="close">&times;</span>
-                <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                <img class="infografi" src="img/infoknap.png">
+                <p> Pakkens længde illustreret på billedet.</p>
+                <img class="infografi" src="img/produktdimension-01.png" width="100%" height="auto">
               </div>
           </div>
 
@@ -402,14 +382,13 @@
         <input type="text" id="fname" name="fname" value="mm"><br><br>
 
         <!-- infoknap -->
-          <button id="myBtn"></button>
-          <div id="myModal" class="modal">
-
-            <!-- popup content -->
+          <button class="modal-button" href="#myModal20"></button>
+          <div id="myModal20" class="modal">
+            <!-- popup content-->
               <div class="infoknap-content">
                 <span class="close">&times;</span>
-                <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                <img class="infografi" src="img/infoknap.png">
+                <p> Pakkens højde illustreret på billedet.</p>
+                <img class="infografi" src="img/produktdimension-01.png" width="100%" height="auto">
               </div>
           </div>
 
@@ -417,14 +396,13 @@
         <input type="text" id="fname" name="fname" value="mm"><br><br>
 
         <!-- infoknap -->
-          <button id="myBtn"></button>
-          <div id="myModal" class="modal">
-
-            <!-- popup content -->
+          <button class="modal-button" href="#myModal21"></button>
+          <div id="myModal21" class="modal">
+            <!-- popup content-->
               <div class="infoknap-content">
                 <span class="close">&times;</span>
-                <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                <img class="infografi" src="img/infoknap.png">
+                <p> Pakkens bredde illustreret billedet.</p>
+                <img class="infografi" src="img/produktdimension-01.png" width="100%" height="auto">
               </div>
           </div>
 
@@ -439,18 +417,15 @@
   <div class="dropdown">
     <button onclick="myFunction5()" class="dropbtn">Pakke Type</button>
       <div id="myDropdown5" class="dropdown-content">
-        <div class="pakketypeinfoknap">
         <!-- Pakketype formularvalg med valgmuligheder -->
-
         <!-- infoknap -->
-          <button id="myBtn"></button>
-          <div id="myModal" class="modal">
-
-            <!-- popup content -->
+          <button class="modal-button" href="#myModal22"></button>
+          <div id="myModal22" class="modal">
+            <!-- popup content-->
               <div class="infoknap-content">
                 <span class="close">&times;</span>
-                <p>Navngiv den palle du vil have maskinen til at pakke.</p>
-                <img class="infografi" src="img/infoknap.png">
+                <p> Pakke valg illustreret billede.</p>
+                <img class="infografi" src="img/pakkeform-01.png" width="100%" height="auto">
               </div>
           </div>
 
@@ -459,7 +434,6 @@
             <option value="Kasse">Kasse</option>
             <option value="Cylinder">Cylinder</option>
           </select>
-      </div>
     </div>
   </div>
 
