@@ -2000,6 +2000,7 @@ option {
 .h1-text{
   top: 50px;
   left: 125px;
+  width: 40%;
   position:relative;
   color: #000000;
   font-family: 'Raleway', sans-serif;
@@ -2054,6 +2055,7 @@ option {
 .visning{
   top: 150px;
   left: 90px;
+  width: 65%;
   position:relative;
   color: #000000;
   font-family: 'Raleway', sans-serif;
@@ -2087,6 +2089,7 @@ option {
 .kontrol{
   top: 330px;
   left: 105px;
+  width: 70%;
   position:relative;
   color: #000000;
   font-family: 'Raleway', sans-serif;
@@ -2437,6 +2440,7 @@ option {
   .h1-text{
     top: 50px;
     left: 47%;
+    width: 40%;
     position: relative;
     color: #000000;
     font-family: 'Raleway', sans-serif;
@@ -2491,6 +2495,7 @@ option {
   .visning{
     top: 220px;
     left: 44%;
+    width: 40%;
     position: relative;
     color: #000000;
     font-family: 'Raleway', sans-serif;
@@ -2525,6 +2530,7 @@ option {
   .kontrol{
     top: 420px;
     left: 45.5%;
+    width: 40%;
     position: relative;
     color: #000000;
     font-family: 'Raleway', sans-serif;
