@@ -2427,6 +2427,12 @@ button{
     left: 40px;
   }
 
+.panel-indhold{
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
   .panel-text{
     position: absolute;
     top: 170px;
