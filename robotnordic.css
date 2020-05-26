@@ -1999,24 +1999,29 @@ option {
 @media screen and (min-device-width: 181px) and (max-dev-width: 767px) {
 
 .h1-text{
-  top: 120px;
+  top: 50px;
   left: 125px;
-  position: absolute;
+  width: 40%;
+  position:relative;
   color: #000000;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 2px;
 }
 
 .top-line{
-  position: absolute;
-  top: 160px;
+  position:relative;
+  top: 55px;
   width: 80%;
   left: 40px;
 }
 
+.panel-indhold{
+  position: relative;
+}
+
 .panel-text{
-  position: absolute;
-  top: 170px;
+  position:relative;
+  top: 70px;
   color: #000000;
   display: flex;
   flex-direction: column;
@@ -2035,7 +2040,7 @@ option {
 
 .panel-test{
   position: absolute;
-  top: 170px;
+  top: 70px;
   color: #000000;
   display: flex;
   flex-direction: column;
@@ -2049,24 +2054,25 @@ option {
 }
 
 .visning{
-  top: 420px;
+  top: 150px;
   left: 90px;
-  position: absolute;
+  width: 65%;
+  position:relative;
   color: #000000;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 2px;
 }
 
 .midt-line{
-  position: absolute;
-  top: 450px;
+  position:relative;
+  top: 155px;
   width: 80%;
   left: 40px;
 }
 
 .se-palle{
-  position: absolute;
-  top: 470px;
+  position:relative;
+  top: 230px;
   left: 135px;
   font-family: 'Raleway', sans-serif;
   border:0;
@@ -2082,26 +2088,27 @@ option {
 }
 
 .kontrol{
-  top: 620px;
+  top: 330px;
   left: 105px;
-  position: absolute;
+  width: 70%;
+  position:relative;
   color: #000000;
   font-family: 'Raleway', sans-serif;
   letter-spacing: 2px;
 }
 
 .bottom-line{
-  position: absolute;
-  top: 650px;
+  position:relative;
+  top: 335px;
   width: 80%;
   left: 40px;
 }
 
 .flex-knapper-pl{
-  position: absolute;
+  position: relative;
   text-align: center;
-  top: 670px;
-  left: 70px;
+  top: 370px;
+  left: px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -2148,6 +2155,7 @@ option {
    border: none;           /* assuming we don't want any borders */
    cursor: pointer;        /* make the cursor like hovering over an <a> element */
    width: 8%;
+   height: 5%;
    position: absolute;
    margin: 3%;
    margin-left: 1%;
@@ -2210,30 +2218,35 @@ option {
 @media screen and (min-device-width: 768px) and (max-width: 1100px) {
 
   .h1-text{
-    top: 120px;
-    left: 125px;
-    position: absolute;
+    top: 50px;
+    left: 43%;
+    width: 40%;
+    position: relative;
     color: #000000;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
   }
 
   .top-line{
-    position: absolute;
-    top: 160px;
+    position: relative;
+    top: 55px;
     width: 80%;
-    left: 40px;
+    left: 80px;
   }
 
+.panel-indhold{
+  position: relative;
+}
+
   .panel-text{
-    position: absolute;
-    top: 170px;
+    position: relative;
+    top: 80px;
     color: #000000;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
-    margin-left: 45px;
+    margin-left: 145px;
   }
 
   .fyldnings, .pallenavn, .palletype, .procent{
@@ -2246,13 +2259,13 @@ option {
 
   .panel-test{
     position: absolute;
-    top: 170px;
+    top: 80px;
     color: #000000;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
-    margin-left: 295px;
+    margin-left: 580px;
   }
 
   .pl-test, .fyldnings-test, .procent-test{
@@ -2260,26 +2273,28 @@ option {
   }
 
   .visning{
-    top: 420px;
-    left: 90px;
-    position: absolute;
+    top: 220px;
+    left: 37.5%;
+    width: 40%;
+    position: relative;
     color: #000000;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
   }
 
   .midt-line{
-    position: absolute;
-    top: 450px;
+    position: relative;
+    top: 225px;
     width: 80%;
-    left: 40px;
+    left: 80px;
   }
 
   .se-palle{
-    position: absolute;
-    top: 470px;
-    left: 135px;
+    position: relative;
+    top: 320px;
+    left: 280px;
     font-family: 'Raleway', sans-serif;
+    font-size: 20px;
     border:0;
     background-color: #ffffff;
     margin: auto;
@@ -2293,27 +2308,29 @@ option {
   }
 
   .kontrol{
-    top: 620px;
-    left: 105px;
-    position: absolute;
+    top: 420px;
+    left: 40.5%;
+    width: 40%;
+    position: relative;
     color: #000000;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
   }
 
   .bottom-line{
-    position: absolute;
-    top: 650px;
+    position: relative;
+    top: 425px;
     width: 80%;
-    left: 40px;
+    left: 80px;
   }
 
   .flex-knapper-pl{
-    position: absolute;
+    position: relative;
     text-align: center;
-    top: 670px;
-    left: 70px;
+    top: 470px;
+    left: 85px;
     font-family: 'Raleway', sans-serif;
+    width: 80%;
   }
 
   .print, .gem, .plan{
@@ -2323,7 +2340,7 @@ option {
     margin: 20px auto;
     text-align: center;
     padding: 24px;
-    width: 80%;
+    width: 40%;
     outline: none;
     border-radius: 18px;
     transition: 0.25s;
@@ -2344,7 +2361,7 @@ option {
     margin: 20px auto;
     text-align: center;
     padding: 24px;
-    width: 80%;
+    width: 40%;
     outline: none;
     border-radius: 18px;
     transition: 0.25s;
@@ -2422,30 +2439,35 @@ option {
 @media screen and (min-width: 1101px) {
 
   .h1-text{
-    top: 120px;
-    left: 125px;
-    position: absolute;
+    top: 50px;
+    left: 47%;
+    width: 40%;
+    position: relative;
     color: #000000;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
   }
 
   .top-line{
-    position: absolute;
-    top: 160px;
+    position: relative;
+    top: 55px;
     width: 80%;
-    left: 40px;
+    left: 130px;
   }
 
+.panel-indhold{
+  position: relative;
+}
+
   .panel-text{
-    position: absolute;
-    top: 170px;
+    position: relative;
+    top: 80px;
     color: #000000;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
-    margin-left: 45px;
+    margin-left: 245px;
   }
 
   .fyldnings, .pallenavn, .palletype, .procent{
@@ -2458,13 +2480,13 @@ option {
 
   .panel-test{
     position: absolute;
-    top: 170px;
+    top: 80px;
     color: #000000;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
-    margin-left: 295px;
+    margin-left: 1100px;
   }
 
   .pl-test, .fyldnings-test, .procent-test{
@@ -2472,26 +2494,28 @@ option {
   }
 
   .visning{
-    top: 420px;
-    left: 90px;
-    position: absolute;
+    top: 220px;
+    left: 44%;
+    width: 40%;
+    position: relative;
     color: #000000;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
   }
 
   .midt-line{
-    position: absolute;
-    top: 450px;
+    position: relative;
+    top: 225px;
     width: 80%;
-    left: 40px;
+    left: 130px;
   }
 
   .se-palle{
-    position: absolute;
-    top: 470px;
-    left: 135px;
+    position: relative;
+    top: 320px;
+    left: 525px;
     font-family: 'Raleway', sans-serif;
+    font-size: 20px;
     border:0;
     background-color: #ffffff;
     margin: auto;
@@ -2505,37 +2529,74 @@ option {
   }
 
   .kontrol{
-    top: 620px;
-    left: 105px;
-    position: absolute;
+    top: 420px;
+    left: 45.5%;
+    width: 40%;
+    position: relative;
     color: #000000;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
   }
 
   .bottom-line{
-    position: absolute;
-    top: 650px;
+    position: relative;
+    top: 425px;
     width: 80%;
-    left: 40px;
+    left: 130px;
   }
 
   .flex-knapper-pl{
-    position: absolute;
+    position: relative;
+    display: flex;
+    flex-direction: row;
     text-align: center;
-    top: 670px;
-    left: 70px;
+    top: 470px;
+    justify-content: space-between;
+    left: 120px;
+    margin-left: 150px;
+    width: 65%;
     font-family: 'Raleway', sans-serif;
   }
 
-  .print, .gem, .plan{
+  .print{
     border:0;
     background-color: #313C40;
     display:block;
     margin: 20px auto;
     text-align: center;
-    padding: 24px;
-    width: 80%;
+    padding: 23px 5px 23px 5px;
+    width: 170%;
+    margin-right: 30px;
+    outline: none;
+    border-radius: 18px;
+    transition: 0.25s;
+    display: block;
+  }
+
+  .gem{
+    border:0;
+    background-color: #313C40;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 23px 5px 23px 5px;
+    margin-right: 30px;
+    width: 170%;
+    outline: none;
+    border-radius: 18px;
+    transition: 0.25s;
+    display: block;
+  }
+
+  .plan{
+    border:0;
+    background-color: #313C40;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 23px 5px 23px 5px;
+    margin-right: 30px;
+    width: 170%;
     outline: none;
     border-radius: 18px;
     transition: 0.25s;
@@ -2555,8 +2616,8 @@ option {
     display:block;
     margin: 20px auto;
     text-align: center;
-    padding: 24px;
-    width: 80%;
+    padding: 23px 5px 23px 5px;
+    width: 170%;
     outline: none;
     border-radius: 18px;
     transition: 0.25s;
