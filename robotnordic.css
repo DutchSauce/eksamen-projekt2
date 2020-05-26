@@ -2456,6 +2456,8 @@ option {
 
 .panel-indhold{
   position: relative;
+  width: 80%;
+  margin: auto;
 }
 
   .panel-text{
