@@ -34,6 +34,7 @@
  width: 100%;
  z-index: 1;
  overflow-y: scroll;
+ opacity: 60%;
 }
 
 
@@ -84,9 +85,8 @@
    width: 15%;
    display: block;
    position: relative;
-   float: right;
    margin-top: -68px;
-   margin-right: 170px;
+   margin-right: 180px;
  }
 
  /*---------Menu baren flag -------*/
@@ -255,7 +255,7 @@ button{
   font-size: 18px;
   letter-spacing: 4px;
   background: #313c40;
-  margin-top: 40%;
+  margin-top: 10%;
   margin-left:15%;
   text-align: center;
   padding: 18px 14px;
@@ -330,10 +330,10 @@ button{
 .custom-select {
   position: absolute;
   font-family: 'Raleway', sans-serif;
-  margin-top: 50%;
-  margin-left: 1%;
+  margin-top: 60%;
   padding: 18px 14px;
-  width: 90%;
+  width: 120%;
+  margin-left: -15%;
   font-size: 18px;
   letter-spacing: 4px;
 }
@@ -344,8 +344,11 @@ button{
   }
 
   .select-selected {
-    background-color: #313c40;
-    border-radius: 18px;
+    background-color: #5eb5eb;
+    display: block;
+    position: relative;
+    margin: -45% 0 0 10%;
+    z-index: 1;
   }
 
   /* design af pil ned */
@@ -384,9 +387,8 @@ button{
     background-color: #313c40;
     opacity: 0.8;
     top: 80%;
-    margin-left: 1%;
-    width: 91%;
-    border-radius: 0px 0px 18px 18px;
+    margin: -32% 0% 0% 9%;
+    width: 84%;
   }
 
   /*hide the items when the select box is closed:*/
