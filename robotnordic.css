@@ -241,474 +241,6 @@ button{
 
 }
 
-@media screen and (min-device-width: 768px) and (max-width: 1100px) {
-
-
-    /* font til tekst: font-family: 'Raleway', sans-serif; */
-  /* font til tal: font-family: 'Source Sans Pro', sans-serif; */
-  *{
-    margin: 0;
-    padding: 0;
-    font-family: Raleway;
-    letter-spacing: 2px;
-
-  }
-
-
-
-  /* --------- Baggrunds javascript -----------*/
-  #canvas_container{
-    width: 100%;
-    height: 812px;
-    margin:0;
-    position: absolute;
-  }
-  #my_canvas{
-   display: block;
-   float: left;
-   width: 100%;
-   z-index: 1;
-  }
-
-
-  /* --------- menu baren -----------*/
-  .wrapper {
-    width: 100%;
-    margin: auto;
-    background-color: #5f5c5c;
-    position: sticky;
-  }
-
-  .sidebar {
-    overflow: hidden;
-    background-color: #5f5c5c;
-    position: relative;
-    height: 2%;
-  }
-
-  .sidebar #myLinks {
-    display: none;
-  }
-
-  .sidebar a {
-    font-family: 'Raleway', sans-serif;
-    color:#F25835;
-    padding: 23px 25px;
-    text-decoration: none;
-    font-size: 30px;
-    display: block;
-  }
-
-  .sidebar a.icon {
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .sidebar a:hover {
-    color:#F25835;
-  }
-
-
-   /*---------Log ud ikon-------*/
-
-   .log-out{
-     width: 10%;
-     display: block;
-     position: relative;
-     margin-top: -68px;
-     margin-right: 170px;
-     left: 350px;
-   }
-
-   /*---------Menu baren flag -------*/
-  .dansk {
-    display: block;
-    position: relative;
-    float:right;
-    margin-top: -62px;
-    margin-right:90px;
-    border-radius: 3px;
-   }
-
-  .engelsk {
-    display: block;
-    position: relative;
-    float:right;
-    margin-top: -62px;
-    margin-right:130px;
-    border-radius: 3px;
-  }
-
-  /*---------Title-------*/
-  .rn{
-    position: relative;
-    font-size: 44px;
-    margin: 20px;
-    text-align: center;
-    letter-spacing: 2px;
-  }
-
-   /*---------- Login ---------*/
-  .box {
-    width: 60%;
-    padding: 40px;
-    position: relative;
-    margin: 20% 20% 0 20%;
-    background: #313c40;
-    text-align: center;
-    border-radius: 10px;
-  }
-
-  .box h2 {
-    font-family: 'Raleway', sans-serif;
-    font-size: 32px;
-    color: white;
-    text-transform: uppercase;
-  }
-
-      /* design for brugernavn og kodeord bokse */
-  .box input[type = "text"], .box input[type = "password"]{
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    border:0;
-    background:none;
-    display:block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #F25835;
-    padding: 5% 5% 5% 5%;
-    width: 70%;
-    outline: none;
-    color:white;
-    border-radius: 18px;
-    transition: 0.25s;
-  }
-
-  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #ffffff;
-  }
-
-  ::placeholder {
-    color: #ffffff;
-    opacity: 1; /* Firefox */
-  }
-
-
-      /* boksen udvider sig når musen fokuserer på en af boksene */
-  .box input[type = "text"]:focus, .box input[type = "password"]:focus{
-    width: 90%;
-    border-color: #5eb5eb;
-    display:flex;
-    justify-items: center;
-
-  }
-      /* design på login*/
-  .log-ind{
-    font-family: 'Raleway', sans-serif;
-    border:0;
-    background:none;
-    display:block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #5eb5eb;
-    padding: 5% 5% 5% 5%;
-    width: 70%;
-    outline: none;
-    color: white;
-    border-radius: 18px;
-    transition: 0.25s;
-    display: block;
-  }
-
-  .log-ind:hover {
-    background-color: #5eb5eb;
-  }
-
-  .log-ind a{
-    text-decoration: none;
-    color: #ffffff;
-  }
-
-  .log-ind-icon{
-    width: 10%;
-    position: absolute;
-    display: inline;
-    left: 130px;
-    bottom: 70px;
-
-  }
-
-  .box a{
-    text-decoration: none;
-  }
-
-  button{
-    border-color: transparent;
-  }
-
-  .scan{
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    border:0;
-    background:none;
-    display:block;
-    margin: 5% 20% 0 20%;
-    text-align: center;
-    background-color: #F25835;
-    padding: 14px 40px;
-    width: 60%;
-    outline: none;
-    color: black;
-    border-radius: 18px;
-    transition: 0.25s;
-    position: absolute;
-
-  }
-
-  .scan:hover {
-    background-color: #313C40;
-    color: #FF7152;
-  }
-
-  .qr-icon{
-    width: 7%;
-    position: absolute;
-    left: 130px;
-    top: 10px;
-  }
-
-}
-
-@media screen and (min-width: 1101px) {
-
-/* --------- Baggrunds javascript -----------*/
-#canvas_container{
-  width: 100%;
-  height:812px;
-  margin:0;
-  position: absolute;
-}
-#my_canvas{
- display: block;
- float: left;
- width: 100%;
- z-index: 1;
-}
-
-
-/* --------- menu baren -----------*/
-.wrapper {
-  width: 100%;
-  margin: auto;
-  background-color: #5f5c5c;
-  position: sticky;
-}
-
-.sidebar {
-  overflow: hidden;
-  background-color: #5f5c5c;
-  position: relative;
-  height: 2%;
-}
-
-.sidebar #myLinks {
-  display: none;
-}
-
-.sidebar a {
-  font-family: 'Raleway', sans-serif;
-  color:#F25835;
-  padding: 23px 25px;
-  text-decoration: none;
-  font-size: 30px;
-  display: block;
-}
-
-.sidebar a.icon {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.sidebar a:hover {
-  color:#F25835;
-}
-
-
- /*---------Log ud ikon-------*/
-
- .log-out{
-   width: 10%;
-   display: block;
-   position: relative;
-   margin-top: -68px;
-   margin-right: 170px;
-   left: 990px;
- }
-
- /*---------Menu baren flag -------*/
-.dansk {
-  display: block;
-  position: relative;
-  float:right;
-  margin-top: -62px;
-  margin-right:70px;
-  border-radius: 3px;
- }
-
-.engelsk {
-  display: block;
-  position: relative;
-  float:right;
-  margin-top: -62px;
-  margin-right:110px;
-  border-radius: 3px;
-}
-
-/*---------Title-------*/
-.rn{
-  position: relative;
-  margin: 50px;
-  text-align: center;
-  letter-spacing: 2px;
-}
-
- /*---------- Login ---------*/
-.box {
-  width: 60%;
-  padding: 40px;
-  position: relative;
-  margin: 10% 20% 0 20%;
-  background: #313c40;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.box h2 {
-  font-family: 'Raleway', sans-serif;
-  color: white;
-  text-transform: uppercase;
-}
-
-    /* design for brugernavn og kodeord bokse */
-.box input[type = "text"], .box input[type = "password"]{
-  font-family: 'Raleway', sans-serif;
-  font-size: 18px;
-  border:0;
-  background:none;
-  display:block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #F25835;
-  padding: 5% 5% 5% 5%;
-  width: 70%;
-  outline: none;
-  color:white;
-  border-radius: 18px;
-  transition: 0.25s;
-}
-
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #ffffff;
-}
-
-::placeholder {
-  color: #ffffff;
-  opacity: 1; /* Firefox */
-}
-
-
-    /* boksen udvider sig når musen fokuserer på en af boksene */
-.box input[type = "text"]:focus, .box input[type = "password"]:focus{
-  width: 90%;
-  border-color: #5eb5eb;
-  display:flex;
-  justify-items: center;
-
-}
-    /* design på login*/
-.log-ind{
-  font-family: 'Raleway', sans-serif;
-  border:0;
-  background:none;
-  display:block;
-  margin: 20px auto;
-  text-align: center;
-  border: 2px solid #5eb5eb;
-  padding: 5% 5% 5% 5%;
-  width: 70%;
-  outline: none;
-  color: white;
-  border-radius: 18px;
-  transition: 0.25s;
-  display: block;
-}
-
-.log-ind:hover {
-  background-color: #5eb5eb;
-}
-
-.log-ind a{
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.log-ind-icon{
-  width: 8%;
-  position: absolute;
-  top: 320px;
-  left: 190px;
-
-
-}
-
-.box a{
-  text-decoration: none;
-  font-size: 26px;
-}
-
-button{
-  border-color: transparent;
-}
-
-.scan{
-  font-family: 'Raleway', sans-serif;
-  font-weight: 600;
-  font-size: 26px;
-  border:0;
-  background:none;
-  display:block;
-  margin: 5% 20% 0 20%;
-  text-align: center;
-  background-color: #F25835;
-  padding: 14px 40px;
-  width: 60%;
-  outline: none;
-  color: black;
-  border-radius: 18px;
-  transition: 0.25s;
-  position: absolute;
-
-}
-
-.scan:hover {
-  background-color: #313C40;
-  color: #FF7152;
-}
-
-.qr-icon{
-  width: 5%;
-  position: absolute;
-  left: 310px;
-  top: 10px;
-}
-
-}
-
 @media screen and (min-device-width: 181px) and (max-device-width: 767px) {
 /*---------- forside.html ---------*/
 
@@ -892,381 +424,6 @@ button{
 }
 
 }
-
-@media screen and (min-device-width: 768px) and (max-width: 1100px) {
-
-  /*---------- forside.html ---------*/
-
-  /*-----------knapper---------*/
-
-  .menuknap {
-    position: relative;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    letter-spacing: 4px;
-    background: #313c40;
-    margin-top: 2%;
-    margin-left:15%;
-    text-align: center;
-    padding: 18px 14px;
-    width: 70%;
-    color:white;
-    border-radius: 18px;
-  }
-  .menuknap1 {
-    position: relative;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    letter-spacing: 4px;
-    background: #313c40;
-    margin-top: 10%;
-    margin-left:15%;
-    text-align: center;
-    padding: 18px 14px;
-    width: 70%;
-    color:white;
-    border-radius: 18px;
-  }
-
-  .menuknap2 {
-    position: relative;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    letter-spacing: 4px;
-    background: #313c40;
-    margin-top: 10%;
-    margin-left:15%;
-    text-align: center;
-    padding: 18px 14px;
-    width: 70%;
-    color:white;
-    border-radius: 18px;
-  }
-
-  .menuknap a{
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-  }
-
-  .menuknap1 a{
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-  }
-
-  .menuknap2 a{
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-  }
-
-  .menuknap img{
-    margin-right: 30px;
-    width: 8%;
-  }
-
-  .menuknap1 img{
-    margin-right: 25px;
-    width: 8%;
-  }
-
-  .menuknap2 img{
-    margin-right: 18px;
-    width: 8%;
-  }
-
-  /*-------- budskabstekst ------*/
-  .custom-select {
-    position: absolute;
-    font-family: 'Raleway', sans-serif;
-    margin-top: 20%;
-    margin-left: 5%;
-    padding: 18px 14px;
-    width: 90%;
-    font-size: 18px;
-    letter-spacing: 4px;
-  }
-
-    /* gemmer select sectionen, så det kommer frem når man dropper down*/
-    .custom-select select {
-      display: none;
-    }
-
-    .select-selected {
-      background-color: #313c40;
-      border-radius: 18px;
-    }
-
-    /* design af pil ned */
-    .select-selected:after {
-      position: absolute;
-      content: "";
-      top: 50%;
-      right: 30px;
-      width: 2px;
-      height: 10px;
-      border: 6px solid transparent;
-      border-color: #fff transparent transparent transparent;
-    }
-
-    /*gør at pilen vender op ad når select sectionen er nede*/
-    .select-selected.select-arrow-active:after {
-      border-color: transparent transparent #fff transparent;
-      top: 30%;
-    }
-
-    /*design teksten i select*/
-    .select-items div, .select-selected {
-      color: #ffffff;
-      padding: 8px 16px;
-      border: 1px solid transparent;
-      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-      cursor: pointer;
-      user-select: none;
-      font-family: 'Raleway', sans-serif;
-      padding: 20px;
-    }
-
-    /* Design for dropdown boksen*/
-    .select-items {
-      position: absolute;
-      background-color: #313c40;
-      opacity: 0.8;
-      top: 80%;
-      margin-left: 1%;
-      width: 91%;
-      border-radius: 0px 0px 18px 18px;
-    }
-
-    /*hide the items when the select box is closed:*/
-    .select-hide {
-      display: none;
-    }
-
-  /*---------- Budskabstekst -------- */
-
-  .overskriftforside {
-    position: relative;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 4px;
-    font-size: 29px;
-    background-color:#313c40;
-    opacity:0.8;
-    padding: 18px 18px;
-    color: white;
-    margin-top: 15%;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 18px 18px 0px 0px;
-  }
-
-  .budskabstekst {
-    position: relative;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 2px;
-    background-color:#313c40;
-    opacity: 0.8;
-    padding: 18px 18px;
-    color: white;
-    font-size: 18px;
-    line-height: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 0px 0px 18px 18px;
-  }
-
-}
-
-@media screen and (min-width: 1101px) {
-
-  /*---------- forside.html ---------*/
-
-  /*-----------knapper---------*/
-
-  .menuknap {
-    position: absolute;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    letter-spacing: 4px;
-    background: #313c40;
-    margin-top: 2%;
-    margin-left:10%;
-    text-align: center;
-    padding: 18px 14px;
-    width: 20%;
-    color:white;
-    border-radius: 18px;
-  }
-  .menuknap1 {
-    position: absolute;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    letter-spacing: 4px;
-    background: #313c40;
-    margin-top: 2%;
-    margin-left:70%;
-    text-align: center;
-    padding: 18px 14px;
-    width: 20%;
-    color:white;
-    border-radius: 18px;
-  }
-
-  .menuknap2 {
-    position: absolute;
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    letter-spacing: 4px;
-    background: #313c40;
-    margin-top: 2%;
-    margin-left:40%;
-    text-align: center;
-    padding: 18px 14px;
-    width: 20%;
-    color:white;
-    border-radius: 18px;
-  }
-
-  .menuknap a{
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-  }
-
-  .menuknap1 a{
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-  }
-
-  .menuknap2 a{
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-  }
-
-  .menuknap img{
-    margin-right: 30px;
-    width: 8%;
-  }
-
-  .menuknap1 img{
-    margin-right: 25px;
-    width: 8%;
-  }
-
-  .menuknap2 img{
-    margin-right: 18px;
-    width: 8%;
-  }
-
-  /*-------- budskabstekst ------*/
-  .custom-select {
-    position: absolute;
-    font-family: 'Raleway', sans-serif;
-    margin-top: 20%;
-    margin-left: 5%;
-    padding: 18px 14px;
-    width: 90%;
-    font-size: 18px;
-    letter-spacing: 4px;
-  }
-
-    /* gemmer select sectionen, så det kommer frem når man dropper down*/
-    .custom-select select {
-      display: none;
-    }
-
-    .select-selected {
-      background-color: #313c40;
-      border-radius: 18px;
-    }
-
-    /* design af pil ned */
-    .select-selected:after {
-      position: absolute;
-      content: "";
-      top: 50%;
-      right: 30px;
-      width: 2px;
-      height: 10px;
-      border: 6px solid transparent;
-      border-color: #fff transparent transparent transparent;
-    }
-
-    /*gør at pilen vender op ad når select sectionen er nede*/
-    .select-selected.select-arrow-active:after {
-      border-color: transparent transparent #fff transparent;
-      top: 30%;
-    }
-
-    /*design teksten i select*/
-    .select-items div, .select-selected {
-      color: #ffffff;
-      padding: 8px 16px;
-      border: 1px solid transparent;
-      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-      cursor: pointer;
-      user-select: none;
-      font-family: 'Raleway', sans-serif;
-      padding: 20px;
-    }
-
-    /* Design for dropdown boksen*/
-    .select-items {
-      position: absolute;
-      background-color: #313c40;
-      opacity: 0.8;
-      top: 80%;
-      margin-left: 3%;
-      width: 91%;
-      border-radius: 0px 0px 18px 18px;
-    }
-
-    /*hide the items when the select box is closed:*/
-    .select-hide {
-      display: none;
-    }
-
-  /*---------- Budskabstekst -------- */
-
-  .overskriftforside {
-    position: relative;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 4px;
-    font-size: 29px;
-    background-color:#313c40;
-    opacity:0.8;
-    padding: 18px 18px;
-    color: white;
-    margin-top: 15%;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 18px 18px 0px 0px;
-  }
-
-  .budskabstekst {
-    position: relative;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 2px;
-    background-color:#313c40;
-    opacity: 0.8;
-    padding: 18px 18px;
-    color: white;
-    font-size: 18px;
-    line-height: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-radius: 0px 0px 18px 18px;
-  }
-
-  }
-
-}
-
-
-/*------Template.html----------*/
 
 @media screen and (min-device-width: 181px ) and (max-device-width: 767px ) {
 
@@ -1509,8 +666,642 @@ option {
   font-size: 16px;
 }
 
+/*---------- panel.html ------------ */
+
+.h1-text{
+  top: 120px;
+  left: 125px;
+  position: absolute;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
 }
 
+.top-line{
+  position: absolute;
+  top: 160px;
+  width: 80%;
+  left: 40px;
+}
+
+.panel-text{
+  position: absolute;
+  top: 170px;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  margin-left: 45px;
+}
+
+.fyldnings, .pallenavn, .palletype, .procent{
+  margin-bottom: 10px;
+}
+
+.fyldnings, .fyldnings-test{
+  margin-top: 30px;
+}
+
+.panel-test{
+  position: absolute;
+  top: 170px;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  margin-left: 295px;
+}
+
+.pl-test, .fyldnings-test, .procent-test{
+  margin-bottom: 10px;
+}
+
+.visning{
+  top: 420px;
+  left: 90px;
+  position: absolute;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+}
+
+.midt-line{
+  position: absolute;
+  top: 450px;
+  width: 80%;
+  left: 40px;
+}
+
+.se-palle{
+  position: absolute;
+  top: 470px;
+  left: 135px;
+  font-family: 'Raleway', sans-serif;
+  border:0;
+  background-color: #ffffff;
+  margin: auto;
+  text-align: center;
+  border: 2px solid #FF7152;
+  padding: 14px;
+  width: 30%;
+  outline: none;
+  border-radius: 18px;
+  transition: 0.25s;
+}
+
+.kontrol{
+  top: 620px;
+  left: 105px;
+  position: absolute;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+}
+
+.bottom-line{
+  position: absolute;
+  top: 650px;
+  width: 80%;
+  left: 40px;
+}
+
+.flex-knapper-pl{
+  position: absolute;
+  text-align: center;
+  top: 670px;
+  left: 70px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.print, .gem, .plan{
+  border:0;
+  background-color: #313C40;
+  display:block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 24px;
+  width: 80%;
+  outline: none;
+  border-radius: 18px;
+  transition: 0.25s;
+  display: block;
+}
+
+.flex-knapper-pl a{
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  letter-spacing: 2px;
+}
+
+.pak{
+  border:0;
+  background-color: #5eb5eb;
+  display:block;
+  margin: 20px auto;
+  text-align: center;
+  padding: 24px;
+  width: 80%;
+  outline: none;
+  border-radius: 18px;
+  transition: 0.25s;
+  display: block;
+}
+
+.back-pil{
+  background-image: url(img/back-pil-01-01.png); /* 16px x 16px */
+   background-color: transparent; /* make the button transparent */
+   background-repeat: no-repeat;  /* make the background image appear only once */
+   background-position: 0px 0px;  /* equivalent to 'top left' */
+   border: none;           /* assuming we don't want any borders */
+   cursor: pointer;        /* make the cursor like hovering over an <a> element */
+   width: 8%;
+   position: absolute;
+   margin: 3%;
+   margin-left: 1%;
+   opacity: 60%;
+}
+
+
+
+/*ccs for infoknap*/
+/* The Modal (baggrund) */
+.modal-button {
+  width: 28px;
+  height: 28px;
+  background: url(img/infoknap.png);
+  background-repeat: no-repeat;
+  border-radius: 100%;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2; /* Sit on top */
+  padding-top: 350px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.infoknap-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 95%;
+  z-index: 99;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+}
+
+
+@media screen and (min-device-width: 768px) and (max-width: 1100px) {
+
+
+    /* font til tekst: font-family: 'Raleway', sans-serif; */
+  /* font til tal: font-family: 'Source Sans Pro', sans-serif; */
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: Raleway;
+    letter-spacing: 2px;
+
+  }
+
+
+
+  /* --------- Baggrunds javascript -----------*/
+  #canvas_container{
+    width: 100%;
+    height: 812px;
+    margin:0;
+    position: absolute;
+  }
+  #my_canvas{
+   display: block;
+   float: left;
+   width: 100%;
+   z-index: 1;
+  }
+
+
+  /* --------- menu baren -----------*/
+  .wrapper {
+    width: 100%;
+    margin: auto;
+    background-color: #5f5c5c;
+    position: sticky;
+  }
+
+  .sidebar {
+    overflow: hidden;
+    background-color: #5f5c5c;
+    position: relative;
+    height: 2%;
+  }
+
+  .sidebar #myLinks {
+    display: none;
+  }
+
+  .sidebar a {
+    font-family: 'Raleway', sans-serif;
+    color:#F25835;
+    padding: 23px 25px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+  }
+
+  .sidebar a.icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .sidebar a:hover {
+    color:#F25835;
+  }
+
+
+   /*---------Log ud ikon-------*/
+
+   .log-out{
+     width: 10%;
+     display: block;
+     position: relative;
+     margin-top: -68px;
+     margin-right: 170px;
+     left: 350px;
+   }
+
+   /*---------Menu baren flag -------*/
+  .dansk {
+    display: block;
+    position: relative;
+    float:right;
+    margin-top: -62px;
+    margin-right:90px;
+    border-radius: 3px;
+   }
+
+  .engelsk {
+    display: block;
+    position: relative;
+    float:right;
+    margin-top: -62px;
+    margin-right:130px;
+    border-radius: 3px;
+  }
+
+  /*---------Title-------*/
+  .rn{
+    position: relative;
+    font-size: 44px;
+    margin: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+
+   /*---------- Login ---------*/
+  .box {
+    width: 60%;
+    padding: 40px;
+    position: relative;
+    margin: 20% 20% 0 20%;
+    background: #313c40;
+    text-align: center;
+    border-radius: 10px;
+  }
+
+  .box h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 32px;
+    color: white;
+    text-transform: uppercase;
+  }
+
+      /* design for brugernavn og kodeord bokse */
+  .box input[type = "text"], .box input[type = "password"]{
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    border:0;
+    background:none;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #F25835;
+    padding: 5% 5% 5% 5%;
+    width: 70%;
+    outline: none;
+    color:white;
+    border-radius: 18px;
+    transition: 0.25s;
+  }
+
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #ffffff;
+  }
+
+  ::placeholder {
+    color: #ffffff;
+    opacity: 1; /* Firefox */
+  }
+
+
+      /* boksen udvider sig når musen fokuserer på en af boksene */
+  .box input[type = "text"]:focus, .box input[type = "password"]:focus{
+    width: 90%;
+    border-color: #5eb5eb;
+    display:flex;
+    justify-items: center;
+
+  }
+      /* design på login*/
+  .log-ind{
+    font-family: 'Raleway', sans-serif;
+    border:0;
+    background:none;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #5eb5eb;
+    padding: 5% 5% 5% 5%;
+    width: 70%;
+    outline: none;
+    color: white;
+    border-radius: 18px;
+    transition: 0.25s;
+    display: block;
+  }
+
+  .log-ind:hover {
+    background-color: #5eb5eb;
+  }
+
+  .log-ind a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .log-ind-icon{
+    width: 10%;
+    position: absolute;
+    display: inline;
+    left: 130px;
+    bottom: 70px;
+
+  }
+
+  .box a{
+    text-decoration: none;
+  }
+
+  button{
+    border-color: transparent;
+  }
+
+  .scan{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border:0;
+    background:none;
+    display:block;
+    margin: 5% 20% 0 20%;
+    text-align: center;
+    background-color: #F25835;
+    padding: 14px 40px;
+    width: 60%;
+    outline: none;
+    color: black;
+    border-radius: 18px;
+    transition: 0.25s;
+    position: absolute;
+
+  }
+
+  .scan:hover {
+    background-color: #313C40;
+    color: #FF7152;
+  }
+
+  .qr-icon{
+    width: 7%;
+    position: absolute;
+    left: 130px;
+    top: 10px;
+  }
+
+}
+
+@media screen and (min-device-width: 768px) and (max-width: 1100px) {
+
+  /*---------- forside.html ---------*/
+
+  /*-----------knapper---------*/
+
+  .menuknap {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: #313c40;
+    margin-top: 2%;
+    margin-left:15%;
+    text-align: center;
+    padding: 18px 14px;
+    width: 70%;
+    color:white;
+    border-radius: 18px;
+  }
+  .menuknap1 {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: #313c40;
+    margin-top: 10%;
+    margin-left:15%;
+    text-align: center;
+    padding: 18px 14px;
+    width: 70%;
+    color:white;
+    border-radius: 18px;
+  }
+
+  .menuknap2 {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: #313c40;
+    margin-top: 10%;
+    margin-left:15%;
+    text-align: center;
+    padding: 18px 14px;
+    width: 70%;
+    color:white;
+    border-radius: 18px;
+  }
+
+  .menuknap a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+
+  .menuknap1 a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+
+  .menuknap2 a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+
+  .menuknap img{
+    margin-right: 30px;
+    width: 8%;
+  }
+
+  .menuknap1 img{
+    margin-right: 25px;
+    width: 8%;
+  }
+
+  .menuknap2 img{
+    margin-right: 18px;
+    width: 8%;
+  }
+
+  /*-------- budskabstekst ------*/
+  .custom-select {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20%;
+    margin-left: 5%;
+    padding: 18px 14px;
+    width: 90%;
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+
+    /* gemmer select sectionen, så det kommer frem når man dropper down*/
+    .custom-select select {
+      display: none;
+    }
+
+    .select-selected {
+      background-color: #313c40;
+      border-radius: 18px;
+    }
+
+    /* design af pil ned */
+    .select-selected:after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: 30px;
+      width: 2px;
+      height: 10px;
+      border: 6px solid transparent;
+      border-color: #fff transparent transparent transparent;
+    }
+
+    /*gør at pilen vender op ad når select sectionen er nede*/
+    .select-selected.select-arrow-active:after {
+      border-color: transparent transparent #fff transparent;
+      top: 30%;
+    }
+
+    /*design teksten i select*/
+    .select-items div, .select-selected {
+      color: #ffffff;
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+      cursor: pointer;
+      user-select: none;
+      font-family: 'Raleway', sans-serif;
+      padding: 20px;
+    }
+
+    /* Design for dropdown boksen*/
+    .select-items {
+      position: absolute;
+      background-color: #313c40;
+      opacity: 0.8;
+      top: 80%;
+      margin-left: 1%;
+      width: 91%;
+      border-radius: 0px 0px 18px 18px;
+    }
+
+    /*hide the items when the select box is closed:*/
+    .select-hide {
+      display: none;
+    }
+
+  /*---------- Budskabstekst -------- */
+
+  .overskriftforside {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 4px;
+    font-size: 29px;
+    background-color:#313c40;
+    opacity:0.8;
+    padding: 18px 18px;
+    color: white;
+    margin-top: 15%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 18px 18px 0px 0px;
+  }
+
+  .budskabstekst {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    background-color:#313c40;
+    opacity: 0.8;
+    padding: 18px 18px;
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 0px 0px 18px 18px;
+  }
+
+}
 
 @media screen and (min-device-width: 768px) and (max-width: 1100px) {
 
@@ -1751,7 +1542,634 @@ option {
     font-size: 16px;
   }
 
+
+  .h1-text{
+    top: 120px;
+    left: 125px;
+    position: absolute;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .top-line{
+    position: absolute;
+    top: 160px;
+    width: 80%;
+    left: 40px;
+  }
+
+  .panel-text{
+    position: absolute;
+    top: 170px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    margin-left: 45px;
+  }
+
+  .fyldnings, .pallenavn, .palletype, .procent{
+    margin-bottom: 10px;
+  }
+
+  .fyldnings, .fyldnings-test{
+    margin-top: 30px;
+  }
+
+  .panel-test{
+    position: absolute;
+    top: 170px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    margin-left: 295px;
+  }
+
+  .pl-test, .fyldnings-test, .procent-test{
+    margin-bottom: 10px;
+  }
+
+  .visning{
+    top: 420px;
+    left: 90px;
+    position: absolute;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .midt-line{
+    position: absolute;
+    top: 450px;
+    width: 80%;
+    left: 40px;
+  }
+
+  .se-palle{
+    position: absolute;
+    top: 470px;
+    left: 135px;
+    font-family: 'Raleway', sans-serif;
+    border:0;
+    background-color: #ffffff;
+    margin: auto;
+    text-align: center;
+    border: 2px solid #FF7152;
+    padding: 14px;
+    width: 30%;
+    outline: none;
+    border-radius: 18px;
+    transition: 0.25s;
+  }
+
+  .kontrol{
+    top: 620px;
+    left: 105px;
+    position: absolute;
+    color: #000000;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+  }
+
+  .bottom-line{
+    position: absolute;
+    top: 650px;
+    width: 80%;
+    left: 40px;
+  }
+
+  .flex-knapper-pl{
+    position: absolute;
+    text-align: center;
+    top: 670px;
+    left: 70px;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .print, .gem, .plan{
+    border:0;
+    background-color: #313C40;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 24px;
+    width: 80%;
+    outline: none;
+    border-radius: 18px;
+    transition: 0.25s;
+    display: block;
+  }
+
+  .flex-knapper-pl a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    letter-spacing: 2px;
+  }
+
+  .pak{
+    border:0;
+    background-color: #5eb5eb;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 24px;
+    width: 80%;
+    outline: none;
+    border-radius: 18px;
+    transition: 0.25s;
+    display: block;
+  }
+
+  .back-pil{
+    background-image: url(img/back-pil-01-01.png); /* 16px x 16px */
+     background-color: transparent; /* make the button transparent */
+     background-repeat: no-repeat;  /* make the background image appear only once */
+     background-position: 0px 0px;  /* equivalent to 'top left' */
+     border: none;           /* assuming we don't want any borders */
+     cursor: pointer;        /* make the cursor like hovering over an <a> element */
+     width: 8%;
+     position: absolute;
+     margin: 3%;
+     margin-left: 1%;
+     opacity: 60%;
+  }
+
+
+
+  /*ccs for infoknap*/
+  /* The Modal (baggrund) */
+  .modal-button {
+    width: 28px;
+    height: 28px;
+    background: url(img/infoknap.png);
+    background-repeat: no-repeat;
+    border-radius: 100%;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 2; /* Sit on top */
+    padding-top: 350px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .infoknap-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 95%;
+    z-index: 99;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
+
+@media screen and (min-width: 1101px) {
+
+/* --------- Baggrunds javascript -----------*/
+#canvas_container{
+  width: 100%;
+  height:812px;
+  margin:0;
+  position: absolute;
+}
+#my_canvas{
+ display: block;
+ float: left;
+ width: 100%;
+ z-index: 1;
+}
+
+
+/* --------- menu baren -----------*/
+.wrapper {
+  width: 100%;
+  margin: auto;
+  background-color: #5f5c5c;
+  position: sticky;
+}
+
+.sidebar {
+  overflow: hidden;
+  background-color: #5f5c5c;
+  position: relative;
+  height: 2%;
+}
+
+.sidebar #myLinks {
+  display: none;
+}
+
+.sidebar a {
+  font-family: 'Raleway', sans-serif;
+  color:#F25835;
+  padding: 23px 25px;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+}
+
+.sidebar a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.sidebar a:hover {
+  color:#F25835;
+}
+
+
+ /*---------Log ud ikon-------*/
+
+ .log-out{
+   width: 10%;
+   display: block;
+   position: relative;
+   margin-top: -68px;
+   margin-right: 170px;
+   left: 990px;
+ }
+
+ /*---------Menu baren flag -------*/
+.dansk {
+  display: block;
+  position: relative;
+  float:right;
+  margin-top: -62px;
+  margin-right:70px;
+  border-radius: 3px;
+ }
+
+.engelsk {
+  display: block;
+  position: relative;
+  float:right;
+  margin-top: -62px;
+  margin-right:110px;
+  border-radius: 3px;
+}
+
+/*---------Title-------*/
+.rn{
+  position: relative;
+  margin: 50px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+ /*---------- Login ---------*/
+.box {
+  width: 60%;
+  padding: 40px;
+  position: relative;
+  margin: 10% 20% 0 20%;
+  background: #313c40;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.box h2 {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+
+    /* design for brugernavn og kodeord bokse */
+.box input[type = "text"], .box input[type = "password"]{
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  border:0;
+  background:none;
+  display:block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #F25835;
+  padding: 5% 5% 5% 5%;
+  width: 70%;
+  outline: none;
+  color:white;
+  border-radius: 18px;
+  transition: 0.25s;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #ffffff;
+}
+
+::placeholder {
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+}
+
+
+    /* boksen udvider sig når musen fokuserer på en af boksene */
+.box input[type = "text"]:focus, .box input[type = "password"]:focus{
+  width: 90%;
+  border-color: #5eb5eb;
+  display:flex;
+  justify-items: center;
+
+}
+    /* design på login*/
+.log-ind{
+  font-family: 'Raleway', sans-serif;
+  border:0;
+  background:none;
+  display:block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #5eb5eb;
+  padding: 5% 5% 5% 5%;
+  width: 70%;
+  outline: none;
+  color: white;
+  border-radius: 18px;
+  transition: 0.25s;
+  display: block;
+}
+
+.log-ind:hover {
+  background-color: #5eb5eb;
+}
+
+.log-ind a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.log-ind-icon{
+  width: 8%;
+  position: absolute;
+  top: 320px;
+  left: 190px;
+
+
+}
+
+.box a{
+  text-decoration: none;
+  font-size: 26px;
+}
+
+button{
+  border-color: transparent;
+}
+
+.scan{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  border:0;
+  background:none;
+  display:block;
+  margin: 5% 20% 0 20%;
+  text-align: center;
+  background-color: #F25835;
+  padding: 14px 40px;
+  width: 60%;
+  outline: none;
+  color: black;
+  border-radius: 18px;
+  transition: 0.25s;
+  position: absolute;
+
+}
+
+.scan:hover {
+  background-color: #313C40;
+  color: #FF7152;
+}
+
+.qr-icon{
+  width: 5%;
+  position: absolute;
+  left: 310px;
+  top: 10px;
+}
+
+}
+
+
+
+
+
+@media screen and (min-width: 1101px) {
+
+  /*---------- forside.html ---------*/
+
+  /*-----------knapper---------*/
+
+  .menuknap {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: #313c40;
+    margin-top: 2%;
+    margin-left:10%;
+    text-align: center;
+    padding: 18px 14px;
+    width: 20%;
+    color:white;
+    border-radius: 18px;
+  }
+  .menuknap1 {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: #313c40;
+    margin-top: 2%;
+    margin-left:70%;
+    text-align: center;
+    padding: 18px 14px;
+    width: 20%;
+    color:white;
+    border-radius: 18px;
+  }
+
+  .menuknap2 {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    background: #313c40;
+    margin-top: 2%;
+    margin-left:40%;
+    text-align: center;
+    padding: 18px 14px;
+    width: 20%;
+    color:white;
+    border-radius: 18px;
+  }
+
+  .menuknap a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+
+  .menuknap1 a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+
+  .menuknap2 a{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+  }
+
+  .menuknap img{
+    margin-right: 30px;
+    width: 8%;
+  }
+
+  .menuknap1 img{
+    margin-right: 25px;
+    width: 8%;
+  }
+
+  .menuknap2 img{
+    margin-right: 18px;
+    width: 8%;
+  }
+
+  /*-------- budskabstekst ------*/
+  .custom-select {
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20%;
+    margin-left: 5%;
+    padding: 18px 14px;
+    width: 90%;
+    font-size: 18px;
+    letter-spacing: 4px;
+  }
+
+    /* gemmer select sectionen, så det kommer frem når man dropper down*/
+    .custom-select select {
+      display: none;
+    }
+
+    .select-selected {
+      background-color: #313c40;
+      border-radius: 18px;
+    }
+
+    /* design af pil ned */
+    .select-selected:after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: 30px;
+      width: 2px;
+      height: 10px;
+      border: 6px solid transparent;
+      border-color: #fff transparent transparent transparent;
+    }
+
+    /*gør at pilen vender op ad når select sectionen er nede*/
+    .select-selected.select-arrow-active:after {
+      border-color: transparent transparent #fff transparent;
+      top: 30%;
+    }
+
+    /*design teksten i select*/
+    .select-items div, .select-selected {
+      color: #ffffff;
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+      cursor: pointer;
+      user-select: none;
+      font-family: 'Raleway', sans-serif;
+      padding: 20px;
+    }
+
+    /* Design for dropdown boksen*/
+    .select-items {
+      position: absolute;
+      background-color: #313c40;
+      opacity: 0.8;
+      top: 80%;
+      margin-left: 3%;
+      width: 91%;
+      border-radius: 0px 0px 18px 18px;
+    }
+
+    /*hide the items when the select box is closed:*/
+    .select-hide {
+      display: none;
+    }
+
+  /*---------- Budskabstekst -------- */
+
+  .overskriftforside {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 4px;
+    font-size: 29px;
+    background-color:#313c40;
+    opacity:0.8;
+    padding: 18px 18px;
+    color: white;
+    margin-top: 15%;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 18px 18px 0px 0px;
+  }
+
+  .budskabstekst {
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 2px;
+    background-color:#313c40;
+    opacity: 0.8;
+    padding: 18px 18px;
+    color: white;
+    font-size: 18px;
+    line-height: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 0px 0px 18px 18px;
+  }
+
+  }
+
+
+
+/*------Template.html----------*/
 
 @media screen and (min-device-width: 1101px){
 
@@ -1992,261 +2410,38 @@ option {
     font-size: 16px;
   }
 
-}
-
-/*---------- panel.html ------------ */
-
-@media screen and (min-device-width: 181px) and (max-dev-width: 767px) {
-
-.h1-text{
-  top: 50px;
-  left: 125px;
-  width: 40%;
-  position:relative;
-  color: #000000;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 2px;
-}
-
-.top-line{
-  position:relative;
-  top: 55px;
-  width: 80%;
-  left: 40px;
-}
-
-.panel-indhold{
-  position: relative;
-}
-
-.panel-text{
-  position:relative;
-  top: 70px;
-  color: #000000;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 2px;
-  margin-left: 45px;
-}
-
-.fyldnings, .pallenavn, .palletype, .procent{
-  margin-bottom: 10px;
-}
-
-.fyldnings, .fyldnings-test{
-  margin-top: 30px;
-}
-
-.panel-test{
-  position: absolute;
-  top: 70px;
-  color: #000000;
-  display: flex;
-  flex-direction: column;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 2px;
-  margin-left: 295px;
-}
-
-.pl-test, .fyldnings-test, .procent-test{
-  margin-bottom: 10px;
-}
-
-.visning{
-  top: 150px;
-  left: 90px;
-  width: 65%;
-  position:relative;
-  color: #000000;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 2px;
-}
-
-.midt-line{
-  position:relative;
-  top: 155px;
-  width: 80%;
-  left: 40px;
-}
-
-.se-palle{
-  position:relative;
-  top: 230px;
-  left: 135px;
-  font-family: 'Raleway', sans-serif;
-  border:0;
-  background-color: #ffffff;
-  margin: auto;
-  text-align: center;
-  border: 2px solid #FF7152;
-  padding: 14px;
-  width: 30%;
-  outline: none;
-  border-radius: 18px;
-  transition: 0.25s;
-}
-
-.kontrol{
-  top: 330px;
-  left: 105px;
-  width: 70%;
-  position:relative;
-  color: #000000;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 2px;
-}
-
-.bottom-line{
-  position:relative;
-  top: 335px;
-  width: 80%;
-  left: 40px;
-}
-
-.flex-knapper-pl{
-  position: relative;
-  text-align: center;
-  top: 370px;
-  left: px;
-  font-family: 'Raleway', sans-serif;
-}
-
-.print, .gem, .plan{
-  border:0;
-  background-color: #313C40;
-  display:block;
-  margin: 20px auto;
-  text-align: center;
-  padding: 24px;
-  width: 80%;
-  outline: none;
-  border-radius: 18px;
-  transition: 0.25s;
-  display: block;
-}
-
-.flex-knapper-pl a{
-  text-decoration: none;
-  color: #ffffff;
-  display: block;
-  letter-spacing: 2px;
-}
-
-.pak{
-  border:0;
-  background-color: #5eb5eb;
-  display:block;
-  margin: 20px auto;
-  text-align: center;
-  padding: 24px;
-  width: 80%;
-  outline: none;
-  border-radius: 18px;
-  transition: 0.25s;
-  display: block;
-}
-
-.back-pil{
-  background-image: url(img/back-pil-01-01.png); /* 16px x 16px */
-   background-color: transparent; /* make the button transparent */
-   background-repeat: no-repeat;  /* make the background image appear only once */
-   background-position: 0px 0px;  /* equivalent to 'top left' */
-   border: none;           /* assuming we don't want any borders */
-   cursor: pointer;        /* make the cursor like hovering over an <a> element */
-   width: 8%;
-   height: 5%;
-   position: absolute;
-   margin: 3%;
-   margin-left: 1%;
-   opacity: 60%;
-}
-
-
-
-/*ccs for infoknap*/
-/* The Modal (baggrund) */
-.modal-button {
-  width: 28px;
-  height: 28px;
-  background: url(img/infoknap.png);
-  background-repeat: no-repeat;
-  border-radius: 100%;
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 2; /* Sit on top */
-  padding-top: 350px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.infoknap-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 95%;
-  z-index: 99;
-}
-
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-}
-
-@media screen and (min-device-width: 768px) and (max-width: 1100px) {
 
   .h1-text{
-    top: 50px;
-    left: 43%;
-    width: 40%;
-    position: relative;
+    top: 120px;
+    left: 125px;
+    position: absolute;
     color: #000000;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
   }
 
   .top-line{
-    position: relative;
-    top: 55px;
+    position: absolute;
+    top: 160px;
     width: 80%;
-    left: 80px;
+    left: 40px;
   }
 
 .panel-indhold{
   position: relative;
+  width: 80%;
+  margin: auto;
 }
 
   .panel-text{
-    position: relative;
-    top: 80px;
+    position: absolute;
+    top: 170px;
     color: #000000;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
-    margin-left: 145px;
+    margin-left: 45px;
   }
 
   .fyldnings, .pallenavn, .palletype, .procent{
@@ -2259,13 +2454,13 @@ option {
 
   .panel-test{
     position: absolute;
-    top: 80px;
+    top: 170px;
     color: #000000;
     display: flex;
     flex-direction: column;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
-    margin-left: 580px;
+    margin-left: 295px;
   }
 
   .pl-test, .fyldnings-test, .procent-test{
@@ -2273,28 +2468,26 @@ option {
   }
 
   .visning{
-    top: 220px;
-    left: 37.5%;
-    width: 40%;
-    position: relative;
+    top: 420px;
+    left: 90px;
+    position: absolute;
     color: #000000;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
   }
 
   .midt-line{
-    position: relative;
-    top: 225px;
+    position: absolute;
+    top: 450px;
     width: 80%;
-    left: 80px;
+    left: 40px;
   }
 
   .se-palle{
-    position: relative;
-    top: 320px;
-    left: 280px;
+    position: absolute;
+    top: 470px;
+    left: 135px;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
     border:0;
     background-color: #ffffff;
     margin: auto;
@@ -2308,29 +2501,27 @@ option {
   }
 
   .kontrol{
-    top: 420px;
-    left: 40.5%;
-    width: 40%;
-    position: relative;
+    top: 620px;
+    left: 105px;
+    position: absolute;
     color: #000000;
     font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
   }
 
   .bottom-line{
-    position: relative;
-    top: 425px;
+    position: absolute;
+    top: 650px;
     width: 80%;
-    left: 80px;
+    left: 40px;
   }
 
   .flex-knapper-pl{
-    position: relative;
+    position: absolute;
     text-align: center;
-    top: 470px;
-    left: 85px;
+    top: 670px;
+    left: 70px;
     font-family: 'Raleway', sans-serif;
-    width: 80%;
   }
 
   .print, .gem, .plan{
@@ -2340,7 +2531,7 @@ option {
     margin: 20px auto;
     text-align: center;
     padding: 24px;
-    width: 40%;
+    width: 80%;
     outline: none;
     border-radius: 18px;
     transition: 0.25s;
@@ -2361,265 +2552,7 @@ option {
     margin: 20px auto;
     text-align: center;
     padding: 24px;
-    width: 40%;
-    outline: none;
-    border-radius: 18px;
-    transition: 0.25s;
-    display: block;
-  }
-
-  .back-pil{
-    background-image: url(img/back-pil-01-01.png); /* 16px x 16px */
-     background-color: transparent; /* make the button transparent */
-     background-repeat: no-repeat;  /* make the background image appear only once */
-     background-position: 0px 0px;  /* equivalent to 'top left' */
-     border: none;           /* assuming we don't want any borders */
-     cursor: pointer;        /* make the cursor like hovering over an <a> element */
-     width: 8%;
-     position: absolute;
-     margin: 3%;
-     margin-left: 1%;
-     opacity: 60%;
-  }
-
-
-
-  /*ccs for infoknap*/
-  /* The Modal (baggrund) */
-  .modal-button {
-    width: 28px;
-    height: 28px;
-    background: url(img/infoknap.png);
-    background-repeat: no-repeat;
-    border-radius: 100%;
-  }
-
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 2; /* Sit on top */
-    padding-top: 350px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-
-  /* Modal Content */
-  .infoknap-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 95%;
-    z-index: 99;
-  }
-
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 40px;
-    font-weight: bold;
-  }
-
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-
-}
-
-@media screen and (min-width: 1101px) {
-
-  .h1-text{
-    top: 50px;
-    left: 47%;
-    width: 40%;
-    position: relative;
-    color: #000000;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 2px;
-  }
-
-  .top-line{
-    position: relative;
-    top: 55px;
     width: 80%;
-    left: 130px;
-  }
-
-.panel-indhold{
-  position: relative;
-  width: 80%;
-  margin: auto;
-}
-
-  .panel-text{
-    position: relative;
-    top: 80px;
-    color: #000000;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 2px;
-    margin-left: 245px;
-  }
-
-  .fyldnings, .pallenavn, .palletype, .procent{
-    margin-bottom: 10px;
-  }
-
-  .fyldnings, .fyldnings-test{
-    margin-top: 30px;
-  }
-
-  .panel-test{
-    position: absolute;
-    top: 80px;
-    color: #000000;
-    display: flex;
-    flex-direction: column;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 2px;
-    margin-left: 1100px;
-  }
-
-  .pl-test, .fyldnings-test, .procent-test{
-    margin-bottom: 10px;
-  }
-
-  .visning{
-    top: 220px;
-    left: 44%;
-    width: 40%;
-    position: relative;
-    color: #000000;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 2px;
-  }
-
-  .midt-line{
-    position: relative;
-    top: 225px;
-    width: 80%;
-    left: 130px;
-  }
-
-  .se-palle{
-    position: relative;
-    top: 320px;
-    left: 525px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    border:0;
-    background-color: #ffffff;
-    margin: auto;
-    text-align: center;
-    border: 2px solid #FF7152;
-    padding: 14px;
-    width: 30%;
-    outline: none;
-    border-radius: 18px;
-    transition: 0.25s;
-  }
-
-  .kontrol{
-    top: 420px;
-    left: 45.5%;
-    width: 40%;
-    position: relative;
-    color: #000000;
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 2px;
-  }
-
-  .bottom-line{
-    position: relative;
-    top: 425px;
-    width: 80%;
-    left: 130px;
-  }
-
-  .flex-knapper-pl{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    top: 470px;
-    justify-content: space-between;
-    left: 120px;
-    margin-left: 150px;
-    width: 65%;
-    font-family: 'Raleway', sans-serif;
-  }
-
-  .print{
-    border:0;
-    background-color: #313C40;
-    display:block;
-    margin: 20px auto;
-    text-align: center;
-    padding: 23px 5px 23px 5px;
-    width: 170%;
-    margin-right: 30px;
-    outline: none;
-    border-radius: 18px;
-    transition: 0.25s;
-    display: block;
-  }
-
-  .gem{
-    border:0;
-    background-color: #313C40;
-    display:block;
-    margin: 20px auto;
-    text-align: center;
-    padding: 23px 5px 23px 5px;
-    margin-right: 30px;
-    width: 170%;
-    outline: none;
-    border-radius: 18px;
-    transition: 0.25s;
-    display: block;
-  }
-
-  .plan{
-    border:0;
-    background-color: #313C40;
-    display:block;
-    margin: 20px auto;
-    text-align: center;
-    padding: 23px 5px 23px 5px;
-    margin-right: 30px;
-    width: 170%;
-    outline: none;
-    border-radius: 18px;
-    transition: 0.25s;
-    display: block;
-  }
-
-  .flex-knapper-pl a{
-    text-decoration: none;
-    color: #ffffff;
-    display: block;
-    letter-spacing: 2px;
-  }
-
-  .pak{
-    border:0;
-    background-color: #5eb5eb;
-    display:block;
-    margin: 20px auto;
-    text-align: center;
-    padding: 23px 5px 23px 5px;
-    width: 170%;
     outline: none;
     border-radius: 18px;
     transition: 0.25s;
@@ -2692,6 +2625,8 @@ option {
   }
 
 }
+
+
 
 /* slidshow*/
 * {box-sizing: border-box}
