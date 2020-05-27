@@ -20,9 +20,7 @@ function initCanvas(){
     function animate(){
         ctx.save();
         ctx.clearRect(0, 0, cW, cH);
-        // Start drawing here
         background.render();
-        // End drawing here
         ctx.restore();
     }
     var animateInterval = setInterval(animate, 30);
@@ -30,10 +28,10 @@ function initCanvas(){
 window.addEventListener('load', function(event) {
     initCanvas();
 });
-
+   
 /* ------ menu baren burger menu -------*/
 function myfunction(menubar) {
-    var x = document.getElementById("myLinks");
+    let x = document.getElementById("myLinks");
     if (x.style.display === "block") {
       x.style.display = "none";
     }
@@ -41,8 +39,6 @@ function myfunction(menubar) {
       x.style.display = "block";
     }
   }
-
-
 /* ---------- budskabstekst dropdown --------- */
 
 var x, i, j, selElmnt, a, b, c;
