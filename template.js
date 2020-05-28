@@ -1,3 +1,4 @@
+console.log("JS is running");
 /* Accordion funktion */
 var acc = document.getElementsByClassName("accordion");
 var i;
