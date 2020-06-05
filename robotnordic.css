@@ -559,6 +559,10 @@ img {vertical-align: middle;}
   margin: 15% 10% 0 10%;
 }
 
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
 .accordion2 {
   background-color: #313C40;
   color: #ffffff;
@@ -1043,7 +1047,7 @@ option {
     width:100%;
     height: auto;
   }
-  
+
 
   /* --------- Baggrunds javascript -----------*/
   #canvas_container{
@@ -2037,12 +2041,12 @@ option {
 }
 
 @media screen and (min-width: 1101px) {
-  
+
 .infografi {
   width:100%;
   height: auto;
 }
-  
+
 
 /* --------- Baggrunds javascript -----------*/
 #canvas_container{
@@ -2828,7 +2832,7 @@ button{
     border-radius: 10px;
     font-size: 16px;
   }
-  
+
 
 
   .h1-text{
