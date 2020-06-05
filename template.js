@@ -1,3 +1,4 @@
+console.log("JS is running");
 /* Accordion funktion */
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -98,16 +99,16 @@ window.onclick = function(event) {
 */
 
 
-// Get the button that opens the modal
+// henter knappen der åbner modal
 var btn = document.querySelectorAll("button.modal-button");
 
-// All page modals
+// Alle sider moddals
 var modals = document.querySelectorAll('.modal');
 
-// Get the <span> element that closes the modal
+// Henter <span> element der lukker modal.
 var spans = document.getElementsByClassName("close");
 
-// When the user clicks the button, open the modal
+// Når brugeren klikker på button åbner modal
 for (var i = 0; i < btn.length; i++) {
  btn[i].onclick = function(e) {
     e.preventDefault();
@@ -116,7 +117,7 @@ for (var i = 0; i < btn.length; i++) {
  }
 }
 
-// When the user clicks on <span> (x), close the modal
+// Når brugeren klikker på <span> (x), lukker modal
 for (var i = 0; i < spans.length; i++) {
  spans[i].onclick = function() {
     for (var index in modals) {
@@ -125,7 +126,7 @@ for (var i = 0; i < spans.length; i++) {
  }
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// Når brugeren klikker alle andre steder lukker modal
 window.onclick = function(event) {
     if (event.target.classList.contains('modal')) {
      for (var index in modals) {
