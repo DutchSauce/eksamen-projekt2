@@ -134,3 +134,7 @@ window.onclick = function(event) {
      }
     }
 }
+// alert videre knappen
+function myFunction() {
+  alert("I am an alert box!");
+}
