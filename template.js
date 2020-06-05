@@ -134,7 +134,26 @@ window.onclick = function(event) {
      }
     }
 }
-// alert videre knappen
-function myFunction() {
-  alert("I am an alert box!");
+
+var modal = document.getElementById("mitVindue");
+
+
+var btn = document.getElementById("minKnap");
+
+
+var span = document.getElementsByClassName("luk")[0];
+
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
