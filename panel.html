@@ -16,12 +16,6 @@
 </head>
 
 <body>
-
-  <!-- Kørende baggrund. Her er der kun id til JS og højden på billedet -->
-  <div id="canvas_container">
-    <canvas id="my_canvas" height="812"></canvas>
-  </div>
-
   <!-- Hele menubaren -->
   <div class="wrapper">
 
@@ -35,20 +29,22 @@
       <!-- Burgermenuens indhold -->
       <div id="myLinks">
         <a href="forside.html">Forside</a>
-        <a href="template.html">Create template</a>
-        <a href="panel.html">Control panel</a>
+        <a href="template.html">Lav Skabelon</a>
+        <a href="panel.html">Kontrol panel</a>
       </div>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <a href="javascript:void(0);" class="icon" onclick="myfunction(menubar)">
         <i class="fa fa-bars"></i>
       </a>
     </div>
   </div>
-<div class="back-pil">
-  <a href="forside.html"><img title="Gå tilbage til forsiden" src="img/back-pil.png" alt="En tilbage vej til forsiden"></a>
-</div>
+
+
+
+  <button  onclick="window.history.back()" class="back-pil"><img src="img/back-pil-01-01.png" alt="tilbage knap"></button>
 
   <h1 class="h1-text">Oversigt</h1>
   <hr class="top-line">
+  <div class="panel-indhold">
   <div class="panel-text">
     <div class="pallenavn">Pallenavn:</div>
     <div class="palletype">Palletype:</div>
@@ -63,20 +59,31 @@
     <div class="procent-test">Test</div>
     <div class="tilladt-test">Test</div>
   </div>
+  </div>
 
   <h2 class="visning">Visning af pallen</h2>
   <hr class="midt-line">
-  <div class="se-palle"><a href="#">Se Palle</a></div>
+  <!-- infoknap -->
+    <button class="se-palle" data-href="#myModal23" data-slide="prev"> Se palle </button>
+    <div id="myModal23" class="modal">
+      <!-- popup content-->
+        <div class="infoknap-content">
+          <span class="close">&times;</span>
+          <h2> Visionlisering af din palle</h2>
+          <img class="infografi" src="img/topplacering-01.png" alt="infoknap om pallen">
+        </div>
+    </div>
+  <!--<div class="se-palle"><a href="#">Se Palle</a></div> -->
 
 <h2 class="kontrol">Kontrol Panel</h2>
 <hr class="bottom-line">
 <div class="flex-knapper-pl">
-<div class="print"><a href="#">Print Label</a></div>
-<div class="gem"><a href="#">Gem Skabelon</a></div>
-<div class="plan"><a href="#">Tilføj til planlægning</a></div>
-<div class="pak"><a href="#" style="
-    color: #ffffff;">Begynd Pakning</a></div>
+  <div class="print"><a href="#">Print Label</a></div>
+  <div class="gem"><a href="#">Gem Skabelon</a></div>
+  <div class="plan"><a href="#">Tilføj til planlægning</a></div>
+  <div class="pak"><a href="#" style="color: #ffffff;">Begynd Pakning</a></div>
 </div>
+
 </body>
 
 </html>

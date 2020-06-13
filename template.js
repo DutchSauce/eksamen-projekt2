@@ -1,3 +1,4 @@
+console.log("JS is running");
 /* Accordion funktion */
 var acc = document.getElementsByClassName("accordion");
 var i;
@@ -14,6 +15,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+
 var acc = document.getElementsByClassName("accordion2");
 var i;
 
@@ -29,6 +31,20 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+var acc = document.getElementsByClassName("accordion3");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 
 
 /* When the user clicks on the button,
@@ -83,27 +99,59 @@ window.onclick = function(event) {
 */
 
 
+// henter knappen der åbner modal
+var btn = document.querySelectorAll("button.modal-button");
 
-// infoknap JS
-var modal = document.getElementById("myModal");
+// Alle sider moddals
+var modals = document.querySelectorAll('.modal');
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
+// Henter <span> element der lukker modal.
+var spans = document.getElementsByClassName("close");
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+// Når brugeren klikker på button åbner modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("data-href"));
+    modal.style.display = "block";
+ }
+}
 
-// When the user clicks the button, open the modal
+// Når brugeren klikker på <span> (x), lukker modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+    }
+ }
+}
+
+// Når brugeren klikker alle andre steder lukker modal
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+     }
+    }
+}
+
+var modal = document.getElementById("mitVindue");
+
+
+var btn = document.getElementById("minKnap");
+
+
+var span = document.getElementsByClassName("luk")[0];
+
+
 btn.onclick = function() {
   modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";

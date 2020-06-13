@@ -1,39 +1,7 @@
 console.log("JS is running");
-/*--------- Kørende baggrund ----------*/
-var bg = new Image();
-bg.src = "img/baggrund.png";
-function initCanvas(){
-    var ctx = document.getElementById('my_canvas').getContext('2d');
-    var cW = ctx.canvas.width, cH = ctx.canvas.height;
-
-    function Background(){
-        this.x = 0, this.y = 0, this.w = bg.width, this.h = bg.height;
-        this.render = function(){
-            ctx.drawImage(bg, this.x--, 0);
-            if(this.x <= -2000){
-                this.x = 0;
-            }
-        }
-    }
-    var background = new Background();
-
-    function animate(){
-        ctx.save();
-        ctx.clearRect(0, 0, cW, cH);
-        // Start drawing here
-        background.render();
-        // End drawing here
-        ctx.restore();
-    }
-    var animateInterval = setInterval(animate, 30);
-}
-window.addEventListener('load', function(event) {
-    initCanvas();
-});
-
 /* ------ menu baren burger menu -------*/
 function myfunction(menubar) {
-    var x = document.getElementById("myLinks");
+    let x = document.getElementById("myLinks");
     if (x.style.display === "block") {
       x.style.display = "none";
     }
@@ -41,8 +9,6 @@ function myfunction(menubar) {
       x.style.display = "block";
     }
   }
-
-
 /* ---------- budskabstekst dropdown --------- */
 
 var x, i, j, selElmnt, a, b, c;
@@ -102,3 +68,43 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+
+
+
+//-----------------------------------------------------
+// Get the button that opens the modal
+var btn = document.querySelectorAll("button.se-palle");
+
+// All page modals
+var modals = document.querySelectorAll('.modal');
+
+// Get the <span> element that closes the modal
+var spans = document.getElementsByClassName("close");
+
+// When the user clicks the button, open the modal
+for (var i = 0; i < btn.length; i++) {
+ btn[i].onclick = function(e) {
+    e.preventDefault();
+    modal = document.querySelector(e.target.getAttribute("href"));
+    modal.style.display = "block";
+ }
+}
+
+// When the user clicks on <span> (x), close the modal
+for (var i = 0; i < spans.length; i++) {
+ spans[i].onclick = function() {
+    for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+    }
+ }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+     for (var index in modals) {
+      if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";
+     }
+    }
+}
