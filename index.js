@@ -109,3 +109,10 @@ window.onclick = function(event) {
      }
     }
 }
+
+// alert for print knap
+
+function myFunction() {
+  if (confirm("Er du sikker på du har indtastet de korrekte infomationer? Hvis ja tryk ok")){
+    alert("Du har nu printet")}
+  }
