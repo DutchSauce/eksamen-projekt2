@@ -15,7 +15,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-
 var acc = document.getElementsByClassName("accordion2");
 var i;
 
